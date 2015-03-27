@@ -1,0 +1,14 @@
+Allow from all
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteRule ^menu-([a-zA-Z0-9-]+)-([0-9]+)-([a-zA-Z0-9-]+)$ menu.php?category=$1&catID=$2&Postcode=$3
+RewriteRule ^Postcode-([a-zA-Z0-9-]+)$ menu-explorer.php?postcode=$1
+RewriteRule ^search-([a-zA-Z0-9-]+)$ search.php?q=$1
+RewriteRule ^restaurant-([a-zA-Z0-9-]+)-([a-zA-Z0-9-]+)-([0-9]+)-([a-zA-Z0-9-]+)$ restaurant.php?name=$1&cat=$2&id=$3&postcode=$4
+Options -Indexes
+ErrorDocument 404 404.php
+ErrorDocument 403 404.php
+ErrorDocument 402 404.php
+ErrorDocument 401 404.php
+ErrorDocument 400 404.php

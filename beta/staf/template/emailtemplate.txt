@@ -1,0 +1,9 @@
+<div style="color:#000000; font-size:13px; font-family:Tahoma " align="left">
+<b>Hi %%%friendname%%%,</b><br><br>
+
+This is %%%sendername%%% and I just had to tell you about <a href="http://www.super-tell-a-friend.com">www.super-tell-a-friend.com</a><br><br>
+<br>
+I am sure it will bring more visitors on your website and your online business will grow.<br>
+I was just thinking of you so I hope you enjoy this!<br><br>
+Best Regards,<br>
+%%%sendername%%% 

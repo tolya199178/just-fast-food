@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mysql --host=localhost --user=justfast_awais --password=General123 justfast_food --execute="load data local infile '/home/justfast/public_html/postcode.csv' into table postcodes fields terminated by ',' enclosed by '\"' lines terminated by '\n' ignore 1 lines (Postcode,Latitude,Longitude,Easting,Northing,GridRef,County,District,Ward,DistrictCode,WardCode,Country,CountryCode,Constituency,Introduced,Terminated1,Parish,NationalParks,Population,Households,Builtuparea,Builtupsubdivision,Lowerlayersuperoutputarea)"

@@ -1,0 +1,50 @@
+.bg{
+background-color: #e1ddd9;
+font-size: 12px;
+font-family: Tahoma,Verdana, Arial,;
+color:#564b47;
+padding:0px;
+margin:0px;
+text-align:center;
+}
+div#container {
+width: 900px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color:#FFFFFF;
+}
+div#container_divform {
+width: 810px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color:#FFFFFF;
+}
+div#container_firstpage {
+width: 600px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color:#FFFFFF;
+}
+/* -----------footer--header------------------------- */
+#footer {
+height:28px;
+vertical-align:middle;
+font-family:Tahoma;
+color:#9A0000;
+padding:5px;
+font-size: 13px;
+height:25px;
+text-align:center;
+}
+
+.header {
+margin: 0px;
+padding: 0px;
+background-color:#A6CAF0;
+text-align: left;
+color:#CC0000;
+}
+

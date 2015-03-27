@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="rev.js"></script>
+
+	<link rel="stylesheet" href="jquery-ui.css" />
+	<script src="jquery-ui.js"></script>
+	<script>
+	  $(document).ready(function(){
+		$( "ul" ).sortable();
+		//$( "#dr" ).draggable();
+		$( "p" ).draggable({
+		  drop: function( event, ui ) {
+				alert(ui);
+		  }
+		});
+		$("#save").click(function(e) {
+			var canvas = document.getElementByTagName("canvas");
+			var image = canvas.toDataURL("image/png", true);
+			
+			var imageElement = document.getElementById("myPics");
+			imageElement.src = image;
+		});
+	  });
+	</script>
+	<script type="text/javascript" src="html2canvas.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			html2canvas(document.body, {
+			  onrendered: function(canvas) {
+				document.body.appendChild(canvas);
+				var data = canvas.toDataURL("image/png");
+				if (!window.open(data)) {
+					document.location.href = data;
+				}
+			  }
+			});
+		}
+
+	</script>
+</head>
+<body>
+	<p  id="dr">HELLOW WORLD</p>
+	<a href="#">sf</a>
+	<a href="#">f</a>
+	<a href="" id="save">Save</a>
+	<ul>
+		<li><a href="">A</a></li>
+		<li><a href="">B</a></li>
+		<li><a href="">C</a></li>
+	</ul>
+	<form action="">
+		<input type="text" name="name"/>
+		<input type="text" name="nam2"/>
+		<input type="text" name="nam3"/>
+		<input type="text" name="name4"/>
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+		<img src="" alt="" id="myPics"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+Allow from all
+Options +FollowSymLinks
+
+RewriteEngine On
+
+
+RewriteCond %{HTTP_HOST} !^just-fastfood\.com$ [NC]
+RewriteRule ^(.*)$ https://just-fastfood.com/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteRule ^menu-([a-zA-Z&0-9-]+)-([0-9]+)-([a-zA-Z0-9-]+)$ menu.php?category=$1&catID=$2&Postcode=$3
+RewriteRule ^Postcode-([a-zA-Z0-9-]+)$ search_result.php?postcode=$1
+RewriteRule ^P-([a-zA-Z0-9-]+)$ search_result.php?postcode=$1
+RewriteRule ^search-([a-zA-Z0-9-]+)$ search.php?q=$1
+RewriteRule ^restaurant-([a-zA-Z&0-9-]+)-([a-zA-Z0-9-]+)-([0-9]+)-([a-zA-Z0-9-]+)$ restaurant.php?name=$1&cat=$2&id=$3&postcode=$4
+
+RewriteRule ^career$ /career.php [L]
+RewriteRule ^career/$ /career.php [L]
+
+RewriteRule ^contact$ /contact.php [L]
+RewriteRule ^contact/$ /contact.php [L]
+
+RewriteRule ^what-we-do$ /what-we-do.php [L]
+RewriteRule ^what-we-do/$ /what-we-do.php [L]
+
+RewriteRule ^how-it-works$ /how-it-works.php [L]
+RewriteRule ^how-it-works/$ /how-it-works.php [L]
+
+RewriteRule  ^driver-apply$ /driver-apply.php [L]
+RewriteRule  ^driver-apply/$ /driver-apply.php [L]
+
+RewriteRule ^faq$ /faq.php [L]
+RewriteRule ^faq/$ /faq.php [L]
+Options -Indexes
+ErrorDocument 404 /404.php
+
+Options +Includes
+AddHandler server-parsed .html
+# AddHandler application/x-httpd-php .php
+php_value auto_prepend_file /home/justfast/public_html/ga-1.php
+php_value auto_append_file /home/justfast/public_html/ga.php
+
+#<files *.js.gz>
+#  AddType "text/javascript" .gz
+#  AddEncoding gzip .gz
+#</files>
+#<files *.css.gz>
+#  AddType "text/css" .gz
+#  AddEncoding gzip .gz
+#</files>
+#RewriteEngine on
+##Check to see if browser can accept gzip files.
+#ReWriteCond %{HTTP:accept-encoding} gzip
+#RewriteCond %{HTTP_USER_AGENT} !Safari
+##make sure there's no trailing .gz on the url
+#ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
+##check to see if a .gz version of the file exists.
+#RewriteCond %{REQUEST_FILENAME}.gz -f
+##All conditions met so add .gz to URL filename (invisibly)
+#RewriteRule ^(.+) $1.gz [QSA,L]
+#
+#AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript image/svg+xml
+
+
+#### CACHING ####
+# YEAR
+#<FilesMatch "\.(flv|gif|jpg|jpeg|png|ico)$">
+#   Header set Cache-Control "max-age=2592000"
+#</FilesMatch>
+# WEEK
+
+
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+
+
+
+Header set X-UA-Compatible "IE=Edge,chrome=1"
+
+# Friendly URLs

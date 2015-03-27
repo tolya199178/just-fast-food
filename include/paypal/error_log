@@ -1,0 +1,55 @@
+[21-Mar-2015 15:25:43 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 15:25:46 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 15:25:46 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 15:25:46 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 15:25:46 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[21-Mar-2015 15:52:36 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 15:52:38 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 15:52:38 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 15:52:38 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 15:52:38 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[21-Mar-2015 16:01:25 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 16:01:27 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 16:01:27 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 16:01:27 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 16:01:27 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[21-Mar-2015 16:18:17 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 16:18:19 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 16:18:19 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 16:18:19 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 16:18:19 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[21-Mar-2015 17:52:42 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 17:52:42 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 17:52:42 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 17:52:42 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 17:52:42 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[21-Mar-2015 19:59:52 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 19:59:54 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 19:59:54 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 19:59:54 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 19:59:54 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[21-Mar-2015 20:51:59 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 20:52:01 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 20:52:01 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 20:52:01 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 20:52:01 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[21-Mar-2015 21:59:36 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[21-Mar-2015 21:59:38 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[21-Mar-2015 21:59:38 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[21-Mar-2015 21:59:38 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[21-Mar-2015 21:59:38 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[22-Mar-2015 12:30:10 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[22-Mar-2015 12:30:12 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[22-Mar-2015 12:30:12 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[22-Mar-2015 12:30:12 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[22-Mar-2015 12:30:12 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[22-Mar-2015 13:09:47 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[22-Mar-2015 13:09:50 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[22-Mar-2015 13:09:50 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[22-Mar-2015 13:09:50 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[22-Mar-2015 13:09:50 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
+[22-Mar-2015 14:55:36 Europe/London] PHP Notice:  Uninitialized string offset: 0 in /home/justfast/public_html/include/sms/send.php on line 125
+[22-Mar-2015 14:55:37 Europe/London] PHP Notice:  Undefined index: staff_name in /home/justfast/public_html/include/order-movement.php on line 190
+[22-Mar-2015 14:55:37 Europe/London] PHP Notice:  Undefined index:  in /home/justfast/public_html/include/order-movement.php on line 195
+[22-Mar-2015 14:55:37 Europe/London] PHP Notice:  Undefined index: user_phoneno in /home/justfast/public_html/include/email-send.php on line 189
+[22-Mar-2015 14:55:37 Europe/London] PHP Notice:  Undefined index: order_arrival_time in /home/justfast/public_html/include/email-send.php on line 192
