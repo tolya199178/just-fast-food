@@ -2,6 +2,19 @@
 include_once('email-send.php');
 include_once('sms/send.php');
 
+
+// Production:
+// access token: BGweZxdYCZmpLuxKvtoV
+// secret key: oKkzzZcW6ik5CBWPPosp
+
+// Test:
+// access token: FXyhEhoNXV_bVTsYUNZf
+// secret key: 9xUKsde3xCqj3Lz25EE6
+
+/*
+* This function inserts new order into the database 
+* and returns an ID.
+*/
 function insertOrder() {
 
   $json_post = getEandN($_SESSION['CURRENT_POSTCODE']);
@@ -146,6 +159,9 @@ function confirmFastFoodOrder($order_id ,$status) {
     }
 
     SENDMAIL($STRSEND , true);
+    echo '<script type="text/javascript">'
+        , 'createBingCustomer($user_result['user_name'], $user_result['user_address'], $user_result['user_phoneno'], $user_result['user_email']);'
+        , '</script>'
     //SENDSMS($order_result['order_phoneno'] ,$STRSEND ,$type);
 
   } else {
@@ -251,3 +267,49 @@ function orderComplete($order_id) {
 }
 
 ?>
+
+<script type="text/javascript">
+/**
+* This function creates a new customer
+* in Bingg.
+*/
+function createBingCustomer(user_name, user_address, user_phoneno, user_email) {
+  var access_token, secret_key, params;
+   access_token = 'FXyhEhoNXV_bVTsYUNZf';
+   secret_key   =  '9xUKsde3xCqj3Lz25EE6';
+   params = JSON.parse('{
+      "name": user_name,
+      "address": user_address,
+      "phone": user_phoneno,
+      "email": user_email
+   }');
+
+// Make the parameters into URL encoded query string
+
+   params.timestamp = Date.now();
+   params.access_token = access_token;
+   var query_params = '';
+   for(var key in params) {
+    var value = params[key];
+    if(query_params.length > 0) {
+      query_params += '&';
+    }
+    query_params += key + '=' + encodeURIComponent(value);
+   }
+
+   // Sign the query string.
+   params.signature = CryptoJS.HmacSHA1(query_params, secret_key).toString();
+
+   // Create HTTP POST request to endpoint
+   var request = null;
+   request = new XMLHttpRequest();
+   request.open('POST', 'http://api.bringg.com/partner_api/customers', true);
+   request.setRequestHeader('Content-type', 'application/json');
+   console.log('requesting... ', request);
+   request.send(JSON.stringify(params));
+
+}
+
+
+  
+</script>

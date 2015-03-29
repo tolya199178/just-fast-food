@@ -69,6 +69,8 @@ if(isset($_SESSION['CARD_PROCESSING'])) {
 
 	// Set the order amount somehow:
 	$amount = $_SESSION['T_CART_SUBTOTAL'] *100;
+
+    include('../../pay.php');
 	$description = 'An '.$_SESSION['RESTAURANT_TYPE_CATEGORY'].' Order. Amount '.$_SESSION['T_CART_SUBTOTAL'].' pound. By '.$_SESSION['user'].' (user id: '.$_SESSION['userId'].')';
 	// Validate other form data!
 

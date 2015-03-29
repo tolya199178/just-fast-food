@@ -9,8 +9,8 @@
 
 <div class="cta">
     <div class="container-fluid centered">
-        <span>Sign up here. Its easy.</span>
-        <a class="custom_submit_button red_btn2" style="border-radius: 999em" href="/signup.php">Join us </a>
+        <span>Want to order for the office?</span>
+        <a class="custom_submit_button red_btn2" style="border-radius: 999em" href="/corporate-user.php">Join us </a>
 
     </div>
 </div>

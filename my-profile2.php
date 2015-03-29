@@ -216,7 +216,7 @@
                         <div class="col-md-6">
                                                            
 				            	<div class="panel panel-default">
-				            	    <h3 class="header">Pending Orders - Yet to be delivered!</h3>
+				            	    <h3 class="header">Confirmed Order - Yet to be delivered!</h3>
 				            	    <hr class="hr" />
 				            	    <div class="panel-body">
                			                <?php $NEW_ORDER = false;
