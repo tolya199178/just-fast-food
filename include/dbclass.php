@@ -3,15 +3,15 @@
 
 	class database
 	{
-		var $db_HOST = "localhost";
+		/*var $db_HOST = "localhost";
 		var $db_USER = "justfast_awais";
 		var $db_PASS = "General123";
-		var $database = "justfast_food";
+		var $database = "justfast_food";*/
 
-		/*var $db_HOST = "localhost";
+		var $db_HOST = "localhost";
 		var $db_USER = "root";
 		var $db_PASS = "";
-		var $database = "justfast";*/
+		var $database = "justfast_food";
 
 		var $sqlerror = "SQL IS OUT!!";
 		var $con ;
@@ -28,8 +28,8 @@
 
 		function connect_db()
 		{
-			$this->con = mysql_connect($this->db_HOST,$this->db_USER,$this->db_PASS) or die(mysql_error());
-			$m = mysql_select_db($this->database,$this->con) or die(mysql_error());
+			$this->con = mysqli_connect($this->db_HOST,$this->db_USER,$this->db_PASS) or die(mysqli_connect_errno());
+			$m = mysqli_select_db($this->con, $this->database) or die(mysqli_connect_errno());
 			return($this->con);
 		}
 
@@ -43,74 +43,74 @@
 			}
 			//echo $query;
 			//error_log('QUERY: '.$query,0);
-            return(mysql_query($sql,$this->con));
+            return(mysqli_query($this->con, $sql));
 		}
 
 		//close db
 		function close_db()
 		{
-			mysql_close($this->con);
+			mysqli_close($this->con);
 		}
 
 		//last insert id created
 		function id_db()
 		{
-			return mysql_insert_id($this->con);
+			return mysqli_insert_id($this->con);
 		}
 
 		//get number affected rows from last query
 		function affecte_db()
 		{
-		    $tmp = mysql_affected_rows();
+		    $tmp = mysqli_affected_rows();
 		    return($tmp);
 		}
 
 		//get number of rows
 		function num_rows($q)
 		{
-			$tmp = mysql_num_rows($q);
+			$tmp = mysqli_num_rows($q);
 			return($tmp);
 		}
 
 		//get number of fields
 		function num_fields($q)
 		{
-			$tmp = mysql_num_fields($q);
+			$tmp = mysqli_num_fields($q);
 			return($tmp);
 		}
 
 		//get mysql info
 		function db_info()
 		{
-			return mysql_info($this->con);
+			return mysqli_info($this->con);
 		}
 
 		//fetch methods
 		function fetch_db_row($fetched)
 		{
-			return mysql_fetch_row($fetched);
+			return mysqli_fetch_row($fetched);
 		}
 
 		function fetch_db_array($fetched)
 		{
-			return mysql_fetch_array($fetched);
+			return mysqli_fetch_array($fetched);
 		}
 
 
 		function fetch_db_assoc($fetched)
 		{
-			return mysql_fetch_assoc($fetched);
+			return mysqli_fetch_assoc($fetched);
 		}
 
 		function fetch_db_object($fetched)
 		{
-			return mysql_fetch_object($fetched);
+			return mysqli_fetch_object($fetched);
 		}
 
 		function show_column_names($table)
 		{
 			$str = "";
-			$get = mysql_query("SHOW COLUMNS FROM ". $table,$this->con);
+			$get = mysqli_query("SHOW COLUMNS FROM ". $table,$this->con);
 			while($arr = $this -> fetch_db_assoc($get)) {
 				$str .= "`". $arr['Field'] . "`, ";
 			}
@@ -146,7 +146,7 @@
 			$query = str_replace(";","",$query.$order);
 
 
-			$sql = mysql_query($query);
+			$sql = mysqli_query($query);
 			if(!$sql)
 			{
 				echo "query could not be executed<pre>".$query."</pre>";

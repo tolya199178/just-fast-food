@@ -27,7 +27,7 @@ if(!isset($_GET['category']) || !isset($_GET['catID']) || !isset($_GET['Postcode
 
     $where = "categories.type_id = ".$_GET['catID']." AND menu_type.type_id = ".$_GET['catID']."  ORDER BY categories.category_order ASC";
 
-    $query = 'SELECT '.$select.' FROM '.$from.' WHERE '.$where.'';
+    $query = "SELECT '.$select.' FROM '.$from.' WHERE '.$where.'";
 
     //echo $query;
 

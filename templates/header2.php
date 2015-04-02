@@ -258,17 +258,17 @@ function youAreHere($url) {
 
       <ul class="nav-list">
 
-        <li><a <?php youAreHere('index.php'); ?> href="/">Home</a></li>
+        <li><a <?php youAreHere('index.php'); ?> href="index.php">Home</a></li>
 
-        <li><a <?php youAreHere('what-we-do'); ?> href="what-we-do">What we do</a></li>
+        <li><a <?php youAreHere('what-we-do'); ?> href="what-we-do.php">What we do</a></li>
 
-        <li><a <?php youAreHere('how-it-works'); ?> href='how-it-works'>How it works</a></li>
+        <li><a <?php youAreHere('how-it-works'); ?> href='how-it-works.php'>How it works</a></li>
 
         <li><a href="javascript:;" id="res-menu-modal-init">Restaurants</a></li>
 
-        <li><a <?php youAreHere('contact'); ?> href="contact">Contact</a></li>
+        <li><a <?php youAreHere('contact'); ?> href="contact.php">Contact</a></li>
 
-        <li><a <?php youAreHere('faq'); ?> href="faq">FAQ</a></li>
+        <li><a <?php youAreHere('faq'); ?> href="faq.php">FAQ</a></li>
 
       </ul>
 

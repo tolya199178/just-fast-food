@@ -39,10 +39,10 @@
       <div class="f_title"><h3 class="white" style="text-transform: none">Area Covered</h3></div>
       <div class="f_list">
         <ul>
-          <li>West London</li>
-          <li>North London</li>
-          <li>South East London</li>
-          <li>South West London</li>
+          <li>London</li>
+          <li>Birmingham</li>
+          <li>Manchester</li>
+          <li>Leicester</li>
           <li>Portsmouth</li>
 
         </ul>
