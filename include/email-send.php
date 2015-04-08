@@ -186,7 +186,7 @@ function SENDMAIL($GET ,$CC) {
             $MSG .= (is_user_corporate($_SESSION['userId']) == 'true' ? ". Company Order ." : "");
 			$MSG .= 'Address : <strong>'.$GET['order_address'].'</strong><br/>';
 			$MSG .= 'Order Note : <strong style="color:#D62725">'.$GET['order_note'].'</strong><br/>';
-			$MSG .= 'Phone No : <strong>'. $GET['user_phoneno'] .'</strong><br/>';
+			$MSG .= 'Phone No : <strong>'. $GET['order_phoneno'].'</strong><br/>';
             $MSG .= 'Transaction ID : <strong>'.$GET['order_transaction_id'].'</strong><br/>';
             $MSG .= 'Payment Type: <strong>'.$GET['order_payment_type'].'</strong><br/>';
             $MSG .= 'Order Arrival Time: <strong>'.$GET['order_arrival_time'].'</strong><br/><br/>';
