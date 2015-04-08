@@ -304,15 +304,18 @@ if(isset($_GET['edit']) && isset($_GET['id'])) {
                     </div>
                     <div class="section last">
                       <label>Category Name</label>
+                      
                       <div>
-
+                    
                         <select name="category_id" id="category_id">
                           <?php
                           $query = "SELECT * FROM `categories` ".$WHERE_CLAUSE."";
                           $valueOBJ = $obj->query_db($query);
                           while($res = $obj->fetch_db_array($valueOBJ)) {
                             ($ARRAYTEMP['category_id'] == $res['category_id']) ? $sel = 'selected' : $sel = '';
+
                             ?>
+
                             <option value="<?php echo $res['category_id']?>" <?php echo $sel; ?>><?php echo $res['category_name']?></option>
                           <?php
                           }

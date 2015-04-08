@@ -2,32 +2,6 @@
 
 
 
-/**
-
-
-
- * Created by JetBrains PhpStorm.
-
-
-
- * User: Kunle
-
-
-
- * Date: 25/05/14
-
-
-
- * Time: 18:20
-
-
-
- * To change this template use File | Settings | File Templates.
-
-
-
- */
-
 function youAreHere($url) {
 
 

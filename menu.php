@@ -155,7 +155,7 @@ if($_SESSION['delivery_type']['type'] != 'delivery') {
 
     <meta name="author" content="Just-FastFood">
 
-    <title>Menu <?php echo $cat;?> - Just-FastFood</title>
+    <title>Menu - <?php echo $cat;?> - Just-FastFood</title>
 
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
 

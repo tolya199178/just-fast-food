@@ -28,7 +28,7 @@ include("include/functions.php");
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Order Food Online - McDonalds | KFC | Burger King | Nandos | Subway & other Takeaways Delivery! Order Online - London Delivery">
+    <meta name="description" content="Just-FastFood is your single destination for online food ordering and delivery. We provide delivery services for fast food outlets such as McDonalds, KFC, Burger King, Subway and many more bringing tasty meals to your doorstep in less than an hour. Order Online. Get 10% OFF!">
 
     <meta name="keywords" content="Just-FastFood!, <?= getDataFromTable('setting','keywords'); ?>">
 

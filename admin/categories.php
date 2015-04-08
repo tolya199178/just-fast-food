@@ -239,6 +239,7 @@
 																</select>
 															</div>
 														</div>
+                          
 														<div class="section last">
 															<label>Menu Type</label>
 															<div>
@@ -250,7 +251,8 @@
 																	while($res = $obj->fetch_db_array($valueOBJ)) {
 																		($ARRAYTEMP['type_id'] == $res['type_id']) ? $sel = 'selected' : $sel = '';
 																?>
-																	<option value="<?php echo $res['type_id']?>" <?php echo $sel; ?>><?php echo $res['type_name']?></option>
+
+																	<option value="<?php echo $res['type_id']?>" <?php echo $sel; ?>><?php echo $res['type_name'];?></option>
 																<?php
 																	}
 																?>

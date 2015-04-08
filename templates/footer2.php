@@ -26,7 +26,7 @@
               <ul>
                 <li><a href="http://www.facebook.com/JustFastFoods"><i class="fa fa-facebook-square fa-2x"></i></a></li>
                 <li><a href="http://www.twitter.com/JustFastFood"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/b/115653630842872062495/115653630842872062495/posts"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
               </ul>
             </div>
           </li>
@@ -39,11 +39,11 @@
       <div class="f_title"><h3 class="white" style="text-transform: none">Area Covered</h3></div>
       <div class="f_list">
         <ul>
-          <li>West London</li>
-          <li>North London</li>
-          <li>South East London</li>
-          <li>South West London</li>
+          <li>London</li>
+          <li>Birmingham</li>
+          <li>Manchester</li>
           <li>Portsmouth</li>
+          <li>Leicester</li>
 
         </ul>
       </div>
