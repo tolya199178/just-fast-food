@@ -177,7 +177,7 @@ if($result_order['order_status'] == 'assign') {
 
                     }
 
-                }, 
+                },
                 error: function (error) {
                     console.log(error);
                 }
@@ -235,19 +235,19 @@ if($result_order['order_status'] == 'assign') {
 
     </div>
 
-   <?php
+    <?php
 
-   if ($return_status == 'true') {
+    if ($return_status == 'true') {
 
         ?>
 
-     <!--  <div class="alert alert-success alert-dismissable" role="alert" style="margin-left: 10em; width: 80%"> Thanks for your order! Please note we do encounter some delay at the restaurants during peak periods! You ca</div>-->
+        <!--  <div class="alert alert-success alert-dismissable" role="alert" style="margin-left: 10em; width: 80%"> Thanks for your order! Please note we do encounter some delay at the restaurants during peak periods! You ca</div>-->
 
     <?php
 
-   }
+    }
 
-   ?>
+    ?>
 
     <?php include('include/notification.php');?>
 
@@ -268,7 +268,7 @@ if($result_order['order_status'] == 'assign') {
 
                 ?>
 
-               <!-- <div class="panel panel-default shadow">
+                <!-- <div class="panel panel-default shadow">
 
                     <h3 class="header"><?php echo $locationObj['type_name'];?> <span><?php echo $locationObj['location_city'];?></span></h3>
 
@@ -306,19 +306,19 @@ if($result_order['order_status'] == 'assign') {
 
                                     <?php
 
-                                    if($type_special_offer != "") {
+                if($type_special_offer != "") {
 
-                                        echo $type_special_offer['off']. ' % off today on orders over &pound; '.$type_special_offer['pound'];
+                    echo $type_special_offer['off']. ' % off today on orders over &pound; '.$type_special_offer['pound'];
 
 
 
-                                    } else {
+                } else {
 
-                                        echo 'No special Offers';
+                    echo 'No special Offers';
 
-                                    }
+                }
 
-                                    ?>
+                ?>
 
                                 </li>
 
@@ -380,16 +380,16 @@ if($result_order['order_status'] == 'assign') {
 
                                 <li class="list-group-item alert-info">
 
-                                  <h4 class="alert alert-info last">Ohh! Looks like our drivers are fully booked! </h4>
+                                    <h4 class="alert alert-info last">Ohh! Looks like our drivers are fully booked! </h4>
 
-                                  <h5 class="last-a">The driver assigned to your order has a few orders in the queue to be fulfilled.</h5>
+                                    <h5 class="last-a">The driver assigned to your order has a few orders in the queue to be fulfilled.</h5>
 
-                                   <h5 class="last-a">As we try to ensure your food gets to you within 45 minutes, we wouldn't be able to deliver this order now. We're sincerely sorry about this, please try again in a little while.</h5>
+                                    <h5 class="last-a">As we try to ensure your food gets to you within 45 minutes, we wouldn't be able to deliver this order now. We're sincerely sorry about this, please try again in a little while.</h5>
 
 
                                     <h5 class="last-a"> Full refunds are automatically processed when orders are cancelled. </h5>
 
-                                   <h5> For more details, please contact us via our Live Chat or email us your Order ID</h5>
+                                    <h5> For more details, please contact us via our Live Chat or email us your Order ID</h5>
 
                                 </li>
 
@@ -400,7 +400,7 @@ if($result_order['order_status'] == 'assign') {
                                     <p id="order-status" class="alert alert-warning">We're sending your order . . . <br />
                                     </p>
 
-                                   <p class="last-a"><i>Please wait for confirmation to ensure order acceptance!</i></p>
+                                    <p class="last-a"><i>Please wait for confirmation to ensure order acceptance!</i></p>
 
                                     <p class="last-a">IMPORTANT: Direct response can take up to 90 seconds<p>
 
@@ -420,26 +420,26 @@ if($result_order['order_status'] == 'assign') {
 
                             <?php
 
-                           // if($return_status != 'false') {
+                            // if($return_status != 'false') {
 
-                                $notunset = array('user', 'userId', 'cokiee_enabled', 'CURRENT_ORDER_ID', 'CURRENT_POSTCODE');
+                            $notunset = array('user', 'userId', 'cokiee_enabled', 'CURRENT_ORDER_ID', 'CURRENT_POSTCODE');
 
 
-                                foreach($_SESSION as $k => $v){
+                            foreach($_SESSION as $k => $v){
 
-                                    if(in_array($k, $notunset)) continue;
+                                if(in_array($k, $notunset)) continue;
 
-                                    unset($_SESSION[$k]);
+                                unset($_SESSION[$k]);
 
-                                }
+                            }
 
-                                ?>
+                            ?>
 
-                                <div class="txt-right" style="margin-top:20px;">
+                            <div class="txt-right" style="margin-top:20px;">
 
-                                    <a href="my-profile.php" class="btn">Continue</a>
+                                <a href="my-profile.php" class="btn">Continue</a>
 
-                                </div>
+                            </div>
 
                             <?php //} ?>
 
@@ -462,7 +462,7 @@ if($result_order['order_status'] == 'assign') {
 </div>
 
 
-    <?php require('templates/footer2.php');?>
+<?php require('templates/footer2.php');?>
 
 
 </body>
