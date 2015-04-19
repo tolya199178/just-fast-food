@@ -8,7 +8,14 @@
  */
 ?>
 
-
+<style>
+    .f_list ul li a {
+        background: none;
+        position: inherit;
+        color: rgb(249, 75, 33);
+        padding: 5px;
+    }
+</style>
 
 <div class="footer">
   <div class="container">
@@ -39,9 +46,9 @@
       <div class="f_title"><h3 class="white" style="text-transform: none">Area Covered</h3></div>
       <div class="f_list">
         <ul>
-          <li>London</li>
+          <li>London<span><a href="../driver-apply.php" class="button btnClass" id="hiring" style="font-size: smaller">We're hiring!</a></span></li>
           <li>Birmingham</li>
-          <li>Manchester</li>
+          <li>Manchester<span><a href="../driver-apply.php" class="button btnClass" id="hiring" style="font-size: smaller">We're hiring!</a></span></li>
           <li>Portsmouth</li>
           <li>Leicester</li>
 
@@ -68,6 +75,7 @@
     </div>
   </div>
 </div>
+
 <script src="js/jquery.newsTicker.js"></script>
 <script src="js/bootstrapValidator.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

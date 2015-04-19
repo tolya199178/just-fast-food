@@ -4,13 +4,11 @@
 
 session_start();
 
-ob_start("ob_gzhandler");
-
 /* echo '<pre>';
 
 print_r($_SESSION);
 
-echo '</pre>'; */
+echo '</pre>';*/
 
 
 
@@ -38,7 +36,7 @@ if(!isset($_SESSION['CURRENT_ORDER_ID'])){
 
 
 
-$select = "`order_status`,`order_date_added`,`order_rest_id`, `order_acceptence_time`";
+$select = "*";
 
 $where = "`order_id` = '".$_SESSION['CURRENT_ORDER_ID']."'";
 
@@ -52,6 +50,7 @@ $where_time = "`type_id` = '".$result_order['order_rest_id']."'";
 
 $estimated_menu_time = SELECT($select_time ,$where_time, 'menu_type', 'array');
 
+//print_r($estimated_menu_time);
 
 
 if($result_order['order_status'] == 'assign') {
@@ -67,8 +66,6 @@ if($result_order['order_status'] == 'assign') {
     $return_status = 'false';
 
 }
-
-
 
 ?>
 
@@ -149,9 +146,7 @@ if($result_order['order_status'] == 'assign') {
                 data: { ID : <?php echo $_SESSION['CURRENT_ORDER_ID']?>},
 
                 success: function(data) {
-
                     if( data == 'false' ){
-
 
 
                         if( time == 100 ) {
@@ -166,7 +161,7 @@ if($result_order['order_status'] == 'assign') {
 
                         }
 
-                        sec = window.setTimeout('load()',1000);
+                        sec = window.setTimeout('load()',1500);
 
                         time ++;
 
@@ -182,6 +177,9 @@ if($result_order['order_status'] == 'assign') {
 
                     }
 
+                }, 
+                error: function (error) {
+                    console.log(error);
                 }
 
             });
@@ -239,7 +237,7 @@ if($result_order['order_status'] == 'assign') {
 
    <?php
 
-   if ($return_status == true) {
+   if ($return_status == 'true') {
 
         ?>
 
@@ -346,13 +344,13 @@ if($result_order['order_status'] == 'assign') {
 
                             <h5><span >Your Order ID : </span><strong><?php echo $_SESSION['CURRENT_ORDER_ID'];?></strong></h5>
 
-                            <h5><span>Your Transaction ID : </span><strong><?php echo $_SESSION['ORDER_TRANSACTION_DETAILS']['TRANSACTIONID'];?></strong></h5>
+                            <h5><span>Your Transaction ID : </span><strong><?php echo $result_order['order_transaction_id'] ;?></strong></h5>
 
                         </div>
 
                         <ul class="list-group col-md-6 col-md-offset-3">
 
-                            <?php if($return_status == 'true') {?>
+                            <?php if($return_status == 'true') { ?>
 
                                 <li class="list-group-item">Thank You </span><strong><?php echo $_SESSION['user'];?></strong>!</p> Please check your order status below.</li>
 
@@ -362,19 +360,19 @@ if($result_order['order_status'] == 'assign') {
 
                                 <?php
 
-                                $_SESSION['delivery_type'] = json_decode($_SESSION['delivery_type'] , true);
+                                $delivery_type = json_decode($result_order['order_delivery_type'] , true);
 
                                 ?>
 
-                                <?php if($_SESSION['delivery_type']['time'] == "ASAP") {?>
+                                <?php if($delivery_type['time'] == "ASAP") {?>
 
                                     <li class="list-group-item"><span>Estimated Delivery Time  : </span><strong><?php echo date('h:i A' ,strtotime($result_order['order_acceptence_time']) + $estimated_menu_time['type_time']*60) .' (' .$estimated_menu_time['type_time'] .' minutes aprox)';?></strong></li>
 
                                 <?php } ?>
 
-                                <li class="list-group-item"><span>Order Type : </span><strong style="text-transform: capitalize;"><?php echo $_SESSION['delivery_type']['type'] .'  '.$_SESSION['delivery_type']['time']?></strong></li>
+                                <li class="list-group-item"><span>Order Type : </span><strong style="text-transform: capitalize;"><?php echo $delivery_type['type'] .'  '.$delivery_type['time']?></strong></li>
 
-                                <li class="list-group-item"><span>Payment Method : </span><strong style="text-transform: capitalize;"><?php echo ($_SESSION['CHECKOUT_WITH'] == 'By Card') ? 'Card Payment' : $_SESSION['CHECKOUT_WITH'];?></strong></li>
+                                <li class="list-group-item"><span>Payment Method : </span><strong style="text-transform: capitalize;"><?php echo ($result_order['order_payment_type'] == 'By Card') ? 'Card Payment' : $result_order['order_payment_type'];?></strong></li>
 
                                 <li class="list-group-item">You order is on its way!</li>
 
@@ -424,27 +422,16 @@ if($result_order['order_status'] == 'assign') {
 
                            // if($return_status != 'false') {
 
-                                $session_user = $_SESSION['user'];
-
-                                $session_id = $_SESSION['userId'];
-
-                                $cokiee_enabled = $_SESSION['cokiee_enabled'];
-
+                                $notunset = array('user', 'userId', 'cokiee_enabled', 'CURRENT_ORDER_ID', 'CURRENT_POSTCODE');
 
 
                                 foreach($_SESSION as $k => $v){
 
+                                    if(in_array($k, $notunset)) continue;
+
                                     unset($_SESSION[$k]);
 
                                 }
-
-
-
-                                $_SESSION['user'] = $session_user;
-
-                                $_SESSION['userId'] = $session_id;
-
-                                $_SESSION['cokiee_enabled'] = $cokiee_enabled;
 
                                 ?>
 

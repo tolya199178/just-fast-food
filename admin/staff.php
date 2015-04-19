@@ -3,6 +3,7 @@ session_start();
 require_once('include/auth.php');
 include("../include/functions.php");
 include_once('../include/sms/send.php');
+include_once('../include/email-send.php');
 
 $INSERT           = 'false';
 $ERROR_UPDATE     = false;

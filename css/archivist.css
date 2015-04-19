@@ -1692,6 +1692,20 @@ section {
     padding: 2rem;
 }
 
+.panel .m-header, .list-group-item.m-header {
+
+    text-transform: uppercase;
+
+    background: #e74c3c;
+
+    color:#fff;
+
+    text-align: center;
+
+    font-size: 18px;
+
+}
+
 .big-numbered-list {
     counter-reset: li;
 }

@@ -1,3 +1,24 @@
+<style>
+    .button {
+        background:none repeat scroll 0 0 #ff6161;
+        border-radius:2em;
+        box-shadow:0 0 0 rgba(0,0,0,0.4);
+        color:#FFF;
+        font-size:1.125em;
+        font-weight:700;
+        letter-spacing:.07em;
+        line-height:1.5em;
+        text-transform:none;
+        text-align:center;
+        transition:all .3s linear 0;
+        vertical-align:middle;
+        display:inline-block;
+        border:medium none;
+        padding:15px 1.5em;
+        font-font: 'Lato', "Open Sans";
+
+    }
+</style>
 <?php
 
 /**
@@ -7,6 +28,8 @@
  * Time: 20:15
  * To change this template use File | Settings | File Templates.
  */
+
+
 
 if(isset($_GET['verify_email'])) {
 
@@ -55,7 +78,7 @@ if(strlen($_CODE) > 30) {
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        <button type="button" class="button" data-dismiss="modal">Close</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->

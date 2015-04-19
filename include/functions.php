@@ -21,7 +21,7 @@
 
 		$query = "SELECT ".$SELECT." FROM `".$TABLE."` WHERE ".$WHERE."";
 
-		//echo $query;
+		echo $query;
 
 		$value = $obj->query_db($query);
 

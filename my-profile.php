@@ -264,7 +264,7 @@
 
 		  $(document).ready(function(){
 
-			  $("#signupForm").validate();
+			 // $("#signupForm").validate();
 
 			  $("#updtPassForm").validate({
 
@@ -274,7 +274,7 @@
 
 						   equalTo: "#user_password"
 
-					   },
+					   }
 
 				  }
 

@@ -12,7 +12,7 @@ if( isset($_COOKIE['jjf_username']) && isset($_COOKIE['jjf_password']) ) {
   exit();
 }
 
-include("include/functions.php");
+include __DIR__."/include/functions.php";
 
 $ARRAY = array('user_name', 'user_screen_name', 'user_password', 'user_email', 'user_phoneno', 'user_address', 'user_address_1', 'user_city', 'user_post_code', 'user_dob', 'user_hear', 'user_verified', 'user_status');
 

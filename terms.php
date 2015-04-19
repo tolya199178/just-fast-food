@@ -100,6 +100,7 @@ include("include/functions.php");
                         For concerns regarding nut allergies or any other form of food allergy, we strongly advise customers to contact the restaurant directly for advice and information regarding content and ingredients before placing the order with us.
 
                         Each restaurant operates at certain hours, and we can only carry out deliveries for a subset of these hours. These times can be determined by communicating with the respective restaurant, and our delivery hours for these restaurants can be seen on the individual restaurant / menu pages on our website. Restaurant holiday hours may vary.
+                        <br/>
 
                     </p>
 

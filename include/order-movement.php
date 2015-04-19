@@ -79,7 +79,7 @@ function confirmFastFoodOrder($order_id ,$status) {
     } else {
       //TODO: Check number of delivery pending for the current driver and add 45 minutes to the delivery time. Then populate!
 
-      $Order_Time = 'ASAP';
+       $Order_Time = 'ASAP';
     }
     // Update order status in the database
     $obj -> query_db('UPDATE `orders` SET `order_status` = "'.$status.'", `order_acceptence_time` = "'.$Order_Time.'" WHERE `order_id` = "'.$order_id.'"');
@@ -159,9 +159,7 @@ function confirmFastFoodOrder($order_id ,$status) {
     }
 
     SENDMAIL($STRSEND , true);
-    echo '<script type="text/javascript">'
-        , 'createBingCustomer($user_result['user_name'], $user_result['user_address'], $user_result['user_phoneno'], $user_result['user_email']);'
-        , '</script>'
+
     //SENDSMS($order_result['order_phoneno'] ,$STRSEND ,$type);
 
   } else {
@@ -268,12 +266,12 @@ function orderComplete($order_id) {
 
 ?>
 
-<script type="text/javascript">
+<script>
 /**
 * This function creates a new customer
 * in Bingg.
 */
-function createBingCustomer(user_name, user_address, user_phoneno, user_email) {
+/*function createBingCustomer(user_name, user_address, user_phoneno, user_email) {
   var access_token, secret_key, params;
    access_token = 'FXyhEhoNXV_bVTsYUNZf';
    secret_key   =  '9xUKsde3xCqj3Lz25EE6';
@@ -308,7 +306,7 @@ function createBingCustomer(user_name, user_address, user_phoneno, user_email) {
    console.log('requesting... ', request);
    request.send(JSON.stringify(params));
 
-}
+}*/
 
 
   

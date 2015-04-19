@@ -6,7 +6,7 @@ include_once("functions.php");
 
 
 if(!isset($_SESSION['CART']) || !isset($_POST['user_address']) || !isset($_POST['order_note']) || !isset($_POST['user_phoneno'])){
-    header('Loation:/');
+    header('Location:/');
     //die();
 }
 
@@ -42,7 +42,5 @@ if(($_SESSION['RESTAURANT_TYPE_CATEGORY'] == 'fastfood') && ($result_setting['se
         assignOrderTakeaway();
     }
 }
-
 header('location:../order-complete.php');
 die();
-?>

@@ -31,8 +31,10 @@
 			die();
 		} else if ($explode[0] == 'y' || $explode[0] == 'Y'){
 			$status = 'assign';
+            $r = 'No100';
 		} else if($explode[0] == 'n' || $explode[0] == 'N') {
 			$status = 'cancel';
+            $r = 'No200';
 		} else {
 			$ERROR = true;
 			$r = 'No2';
@@ -45,7 +47,7 @@
 	} else {
 		$ERROR = true;
 	}
-	//mail('awaiskhan88172@yahoo.com', 'Reply SMS', json_encode($_REQUEST).' <br>R='.$r);
+	mail('dev@just-fastfood.com', 'Reply SMS', json_encode($_REQUEST).' <br>R='.$r);
 
 	if($ERROR == true) {
 		header("content-type: text/xml");

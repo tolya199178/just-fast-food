@@ -113,6 +113,10 @@ function youAreHere($url) {
 
 
 
+
+
+
+
 </style>
 <div class="header">
 
@@ -164,7 +168,7 @@ function youAreHere($url) {
           }
 
           echo '<li><a href="include/signout.php" title="Signout from your current session"><i class="fa fa-unlock-alt"></i> Signout</a></li>';
-          echo '<li><a href="#" onclick="return SnapEngage.startLink();"><i class="fa fa-weixin"></i> Live Chat</a> ';
+
 
         } else {
 
@@ -174,8 +178,11 @@ function youAreHere($url) {
 
           <li><a href="login.php"><i class="fa fa-user"></i> Sign In</a></li>
           <li><a href="restaurant-owner.php"><i class="fa fa-cutlery"></i> Restaurant Owner?</a></li>
-          <li><a href="../driver-apply.php" class="button btnClass" id="hiring">We're hiring!</a></li>
+
+         <!-- <li><a href="../driver-apply.php" class="button btnClass" id="hiring">We're hiring!</a></li>-->
         <?php } ?>
+          <li><a href="#" onclick="return SnapEngage.startLink();"><i class="fa fa-weixin"></i> Live Chat</a>
+
 
       </ul>
     </div>
@@ -214,7 +221,6 @@ function youAreHere($url) {
 
         <li class="twitter-button"><a href="https://twitter.com/JustFastFood" class="twitter-follow-button" data-width="85px" data-show-count="true" data-lang="en" data-show-screen-name="false">Follow</a></li>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
       </ul>
       <section data-content="modal-cart"></section>
     </div>
@@ -257,6 +263,7 @@ function youAreHere($url) {
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,900' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function(){
