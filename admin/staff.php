@@ -5,6 +5,9 @@ include("../include/functions.php");
 include_once('../include/sms/send.php');
 include_once('../include/email-send.php');
 
+ini_set ('display_errors', '1');
+
+
 $INSERT           = 'false';
 $ERROR_UPDATE     = false;
 $update           = false;

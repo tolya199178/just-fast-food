@@ -28,13 +28,13 @@ include("include/functions.php");
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Just-FastFood is your single destination for online food ordering and delivery. We provide delivery services for fast food outlets such as McDonalds, KFC, Burger King, Subway and many more bringing tasty meals to your doorstep in less than an hour. Order Online. Get 10% OFF!">
+    <meta name="description" content="Just-FastFood - Order KFC delivery, McDonalds delivery, Burger King, Subway and many more. At your door in 45 minutes! Order Online. Get 10% OFF!">
 
     <meta name="keywords" content="Just-FastFood!, <?= getDataFromTable('setting','keywords'); ?>">
 
     <meta name="author" content="Just-FastFood">
 
-    <title>Fast Food Delivery  | Order Online - McDonalds | KFC Delivery | Nandos | Burger King - Food Delivery </title>
+    <title>Fast Food Delivery - McDonalds | KFC Delivery | Nandos | Burger King - Food Delivery </title>
 
     <!--CSS INCLUDES-->
 
