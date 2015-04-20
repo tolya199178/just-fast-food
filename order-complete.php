@@ -356,7 +356,7 @@ if($result_order['order_status'] == 'assign') {
 
                                 <li class="list-group-item"><span>Order Status :</span> <strong>Accepted</strong></li>
 
-                                <li class="list-group-item"><span>Time Accepted : </span><strong><?php echo date('l, F t, Y h:i:s A' ,strtotime($result_order['order_acceptence_time']));?></strong></li>
+                                <li class="list-group-item"><span>Time Accepted : </span><strong><?php echo date('l, h:i A' ,strtotime($result_order['order_acceptence_time']));?></strong></li>
 
                                 <?php
 

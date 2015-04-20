@@ -6,7 +6,6 @@ include_once('functions.php');
 
 function SENDMAIL($GET ,$CC) {
 	global $obj;
-
 	switch($GET['type']) {
 		case 'verify-acct':
 			$MSG = '<strong>Thank you for your interest in Just-FastFood.com. Your Account has been created </strong><br/><br/>';

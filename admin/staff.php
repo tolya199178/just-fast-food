@@ -5,8 +5,7 @@ include("../include/functions.php");
 include_once('../include/sms/send.php');
 include_once('../include/email-send.php');
 
-ini_set ('display_errors', '1');
-
+//ini_set ('display_errors', '1');
 
 $INSERT           = 'false';
 $ERROR_UPDATE     = false;
@@ -55,7 +54,7 @@ if (isset($_POST['add'])) {
       switch ($values) {
 
         case 'staff_password' :
-          $value .= "'" . md5(mysql_real_escape_string($_POST[$values])) . "',";
+          $value .= "'" . md5(mysqli_real_escape_string($obj->con, $_POST[$values])) . "',";
           break;
 
         case 'staff_postcode' :
@@ -64,7 +63,7 @@ if (isset($_POST['add'])) {
           break;
 
         default :
-          $value .= "'" . mysql_real_escape_string($_POST[$values]) . "',";
+          $value .= "'" . mysqli_real_escape_string($obj->con, $_POST[$values]) . "',";
           break;
       }
     }
