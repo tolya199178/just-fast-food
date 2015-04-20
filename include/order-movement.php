@@ -159,9 +159,7 @@ function confirmFastFoodOrder($order_id ,$status) {
     }
 
     SENDMAIL($STRSEND , true);
-    echo '<script type="text/javascript">'
-        , 'createBingCustomer($user_result['user_name'], $user_result['user_address'], $user_result['user_phoneno'], $user_result['user_email']);'
-        , '</script>'
+
     //SENDSMS($order_result['order_phoneno'] ,$STRSEND ,$type);
 
   } else {

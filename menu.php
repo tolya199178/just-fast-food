@@ -27,7 +27,7 @@ if(!isset($_GET['category']) || !isset($_GET['catID']) || !isset($_GET['Postcode
 
     $where = "categories.type_id = ".$_GET['catID']." AND menu_type.type_id = ".$_GET['catID']."  ORDER BY categories.category_order ASC";
 
-    $query = "SELECT '.$select.' FROM '.$from.' WHERE '.$where.'";
+    $query = 'SELECT '.$select.' FROM '.$from.' WHERE '.$where.'';
 
     //echo $query;
 
@@ -155,7 +155,7 @@ if($_SESSION['delivery_type']['type'] != 'delivery') {
 
     <meta name="author" content="Just-FastFood">
 
-    <title>Menu <?php echo $cat;?> - Just-FastFood</title>
+    <title>Menu - <?php echo $cat;?> - Just-FastFood</title>
 
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
@@ -266,9 +266,9 @@ if($_SESSION['delivery_type']['type'] != 'delivery') {
 
 <?php include('include/notification.php');?>
 
-<div class="alert alert-info alert-dismissable" style="width: 60%; margin: auto; display: inherit">If you spot any incorrect item description or prices, Please let <a href="#" onclick="return SnapEngage.startLink();">Debra</a> or <a href="#" onclick="return SnapEngage.startLink();">Brian</a> know and we'll correct this immediately </div>
+<!--<div class="alert alert-info alert-dismissable" style="width: 60%; margin: auto; display: inherit">If you spot any incorrect item description or prices, Please let <a href="#" onclick="return SnapEngage.startLink();">Debra</a> or <a href="#" onclick="return SnapEngage.startLink();">Brian</a> know and we'll correct this immediately </div>-->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
     $(document).ready(function(){
       $(".alert-info").show();
@@ -278,7 +278,7 @@ if($_SESSION['delivery_type']['type'] != 'delivery') {
       }, 1500 );
 
     });
-</script>
+</script>-->
 
 
 <hr class="hr">
@@ -955,8 +955,20 @@ if(!$error) {
             right: 0;
 
         }
+        .cart-wrapper .arrival_time{
+            display: none;
+        }
+
+        .cart-wrapper .order_note {
+            display: none;
+        }
+
+        .cart-wrapper .cart-hr {
+            display: none;
+        }
 
     }
+
 
     @media only screen and (min-width: 481px) and (max-width: 640px){
 
@@ -967,6 +979,7 @@ if(!$error) {
             right: 15%;
 
         }
+
 
     }
 

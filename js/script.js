@@ -62,7 +62,7 @@ $(document).ready(function () {
 
         event.preventDefault();
 
-        console.log('initiate passord form');
+        console.log('initiate password form');
 
         $('#request-p-form').modal();
 
@@ -210,7 +210,7 @@ $(document).ready(function () {
 
     $(".order-button").click( function () {
 
-        console.log($(this));
+        //console.log($(this));
 
         IsMeal = 'false';
 
