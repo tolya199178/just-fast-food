@@ -394,7 +394,7 @@
 
 						<div class="form-group has-feedback">
 
-							<label class="col-lg-3 control-label" for="user_phone">Phone No<span class="required">*</span></label>
+							<label class="col-lg-3 control-label" for="user_phone">Phone No.<span class="required">*</span></label>
 
 							<div class="col-lg-7">
 

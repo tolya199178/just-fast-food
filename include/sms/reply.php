@@ -3,7 +3,10 @@
 	include_once('../email-send.php');
 	include_once('../order-movement.php');
 
-	$from = $_REQUEST['msisdn'];
+
+    require_once "Services/Nexmo/NexmoMessage.php";
+
+    $from = $_REQUEST['msisdn'];
 	$body = $_REQUEST['text'];
 
 	$ERROR = false;

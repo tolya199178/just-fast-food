@@ -263,7 +263,7 @@ function youAreHere($url) {
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,900' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
   $(document).ready(function(){

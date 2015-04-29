@@ -1,5 +1,6 @@
 <?php
 session_start();
+ini_set ('display_errors', '1');
 if (!isset($_SESSION['user_type'])) {
     header('location:staff-login.php');
     die();

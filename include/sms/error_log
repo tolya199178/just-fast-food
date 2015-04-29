@@ -1,5 +1,51 @@
-[21-Mar-2015 14:13:44 Europe/London] PHP Notice:  Undefined variable: status in /home/justfast/public_html/include/sms/reply.php on line 41
-[21-Mar-2015 20:52:20 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
-[21-Mar-2015 20:52:20 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
-[22-Mar-2015 14:59:50 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
-[22-Mar-2015 14:59:50 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[18-Apr-2015 12:58:18 Europe/London] PHP Notice:  Undefined variable: r in /home/justfast/public_html/include/sms/reply.php on line 48
+[18-Apr-2015 13:08:51 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[18-Apr-2015 13:08:51 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[18-Apr-2015 14:10:15 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
+[18-Apr-2015 14:10:15 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[18-Apr-2015 14:10:19 Europe/London] PHP Notice:  Undefined variable: r in /home/justfast/public_html/include/sms/reply.php on line 48
+[18-Apr-2015 14:23:17 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
+[18-Apr-2015 14:23:17 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[18-Apr-2015 14:23:24 Europe/London] PHP Notice:  Undefined variable: r in /home/justfast/public_html/include/sms/reply.php on line 48
+[18-Apr-2015 14:36:20 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
+[18-Apr-2015 14:36:20 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[19-Apr-2015 16:44:51 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[19-Apr-2015 16:44:51 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[19-Apr-2015 16:46:20 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[19-Apr-2015 16:46:20 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[19-Apr-2015 16:46:26 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[19-Apr-2015 16:46:26 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[21-Apr-2015 20:39:49 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
+[21-Apr-2015 20:39:49 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[21-Apr-2015 20:49:56 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[21-Apr-2015 20:49:56 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[21-Apr-2015 20:49:57 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[21-Apr-2015 20:49:57 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[21-Apr-2015 20:50:35 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[21-Apr-2015 20:50:35 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[21-Apr-2015 20:50:36 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[21-Apr-2015 20:50:36 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[22-Apr-2015 20:16:16 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[22-Apr-2015 20:16:16 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[22-Apr-2015 20:16:18 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[22-Apr-2015 20:16:18 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[23-Apr-2015 11:05:32 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[23-Apr-2015 11:05:32 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[23-Apr-2015 11:05:34 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[23-Apr-2015 11:05:34 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[23-Apr-2015 11:10:24 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[23-Apr-2015 11:10:24 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[23-Apr-2015 11:10:25 Europe/London] PHP Notice:  Undefined index: msisdn in /home/justfast/public_html/include/sms/reply.php on line 6
+[23-Apr-2015 11:10:25 Europe/London] PHP Notice:  Undefined index: text in /home/justfast/public_html/include/sms/reply.php on line 7
+[24-Apr-2015 16:34:09 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
+[24-Apr-2015 16:34:09 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[24-Apr-2015 18:13:30 Europe/London] PHP Notice:  Undefined variable: status in /home/justfast/public_html/include/sms/reply.php on line 43
+[24-Apr-2015 18:52:49 Europe/London] PHP Notice:  Undefined index: details in /home/justfast/public_html/include/email-send.php on line 136
+[24-Apr-2015 18:52:49 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[24-Apr-2015 20:58:01 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 412
+[25-Apr-2015 23:16:45 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[25-Apr-2015 23:17:08 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[26-Apr-2015 19:38:15 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[26-Apr-2015 19:46:52 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[26-Apr-2015 21:35:12 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
+[27-Apr-2015 15:20:33 Europe/London] PHP Warning:  Invalid argument supplied for foreach() in /home/justfast/public_html/include/email-send.php on line 137
