@@ -1,0 +1,35 @@
+Allow from all
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteRule ^menu-([a-zA-Z&0-9-]+)-([0-9]+)-([a-zA-Z0-9-]+)$ menu.php?category=$1&catID=$2&Postcode=$3
+RewriteRule ^Postcode-([a-zA-Z0-9-]+)$ search_result.php?postcode=$1
+RewriteRule ^P-([a-zA-Z0-9-]+)$ search_result.php?postcode=$1
+RewriteRule ^search-([a-zA-Z0-9-]+)$ search.php?q=$1
+RewriteRule ^restaurant-([a-zA-Z&0-9-]+)-([a-zA-Z0-9-]+)-([0-9]+)-([a-zA-Z0-9-]+)$ restaurant.php?name=$1&cat=$2&id=$3&postcode=$4
+
+RewriteRule ^career$ career.php [L]
+RewriteRule ^career/$ career.php [L]
+
+RewriteRule ^contact$ contact.php [L]
+RewriteRule ^contact/$ contact.php [L]
+
+RewriteRule ^what-we-do$ what-we-do.php [L]
+RewriteRule ^what-we-do/$ what-we-do.php [L]
+
+RewriteRule ^how-it-works$ how-it-works.php [L]
+RewriteRule ^how-it-works/$ how-it-works.php [L]
+
+RewriteRule  ^driver-apply$ driver-apply.php [L]
+RewriteRule  ^driver-apply/$ driver-apply.php [L]
+
+RewriteRule ^faq$ faq.php [L]
+RewriteRule ^faq/$ faq.php [L]
+Options -Indexes
+ErrorDocument 404 404.php
+
+
+Header set X-UA-Compatible "IE=Edge,chrome=1"
+
+# Friendly URLs
