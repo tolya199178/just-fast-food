@@ -416,7 +416,7 @@ $(document).ready(function () {
 
         // Launch the modal
 
-        console.log( $(this).attr("rel") );
+       // console.log( $(this).attr("rel") );
 
         $('#item-modal #item-remove').attr('data-item-id', $(this).attr("rel"));
 
@@ -586,11 +586,6 @@ $(document).ready(function () {
 
     });
 
-    $(".chat-wrap").click( function () {
-
-        window.open("../chat/client.php", "popUpWindow", "height=650,width=600,position=absolute,right=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes")
-
-    });
 
 });
 

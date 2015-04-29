@@ -40,7 +40,7 @@ if(isset($_POST['add'])) {
       if($values == "item_picture") {
         $val .= "`".$values."` = '".$upload['img_name']."',";
       } else {
-        $val .= "`".$values."` = '".mysql_real_escape_string($_POST[$values])."',";
+        $val .= "`".$values."` = '".mysqli_real_escape_string($obj->con,$_POST[$values])."',";
       }
     }
     $val = substr($val ,0 ,-1);
@@ -55,9 +55,9 @@ if(isset($_POST['add'])) {
       $value = "NULL, ";
       foreach($ARRAY as $values) {
         if($values == "item_picture") {
-          $value .= "'".mysql_real_escape_string($upload['img_name'])."',";
+          $value .= "'".mysqli_real_escape_string($obj->con,$upload['img_name'])."',";
         } else {
-          $value .= "'".mysql_real_escape_string($_POST[$values])."',";
+          $value .= "'".mysqli_real_escape_string($obj->con,$_POST[$values])."',";
         }
       }
       $value .= " NULL";

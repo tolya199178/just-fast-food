@@ -128,7 +128,7 @@ if ( $iis7_permalinks ) {
 	else
 		$writable = false;
 } else {
-	if ( ( ! file_exists($home_path . '.htaccess') && is_writable($home_path) ) || is_writable($home_path . '.htaccess') )
+	if ( ( ! file_exists($home_path . '.htaccess.save') && is_writable($home_path) ) || is_writable($home_path . '.htaccess.save') )
 		$writable = true;
 	else
 		$writable = false;
@@ -153,7 +153,7 @@ if ( ! is_multisite() ) {
 			_e('Permalink structure updated.');
 	} else {
 		if ( $permalink_structure && ! $usingpi && ! $writable )
-			_e('You should update your .htaccess now.');
+			_e('You should update your .htaccess.save now.');
 		else
 			_e('Permalink structure updated.');
 	}
@@ -270,7 +270,7 @@ printf( __('If you like, you may enter custom structures for your category and t
 	<?php endif; ?>
 <?php else :
 	if ( $permalink_structure && ! $usingpi && ! $writable ) : ?>
-<p><?php _e('If your <code>.htaccess</code> file were <a href="http://codex.wordpress.org/Changing_File_Permissions">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all.') ?></p>
+<p><?php _e('If your <code>.htaccess.save</code> file were <a href="http://codex.wordpress.org/Changing_File_Permissions">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess.save</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all.') ?></p>
 <form action="options-permalink.php" method="post">
 <?php wp_nonce_field('update-permalink') ?>
 	<p><textarea rows="6" class="large-text readonly" name="rules" id="rules" readonly="readonly"><?php echo esc_textarea( $wp_rewrite->mod_rewrite_rules() ); ?></textarea></p>

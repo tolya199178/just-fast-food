@@ -100,7 +100,7 @@ function add_feed($feedname, $function) {
  * @see WP_Rewrite::flush_rules()
  * @since 3.0.0
  *
- * @param bool $hard Whether to update .htaccess (hard flush) or just update
+ * @param bool $hard Whether to update .htaccess.save (hard flush) or just update
  * 	rewrite_rules transient (soft flush). Default is true (hard).
  */
 function flush_rewrite_rules( $hard = true ) {
@@ -379,7 +379,7 @@ function url_to_postid($url) {
 /**
  * WordPress Rewrite Component.
  *
- * The WordPress Rewrite class writes the rewrite module rules to the .htaccess
+ * The WordPress Rewrite class writes the rewrite module rules to the .htaccess.save
  * file. It also handles parsing the request to get the correct setup for the
  * WordPress Query class.
  *
@@ -590,7 +590,7 @@ class WP_Rewrite {
 	/**
 	 * Rules that don't redirect to WordPress' index.php.
 	 *
-	 * These rules are written to the mod_rewrite portion of the .htaccess,
+	 * These rules are written to the mod_rewrite portion of the .htaccess.save,
 	 * and are added by {@link add_external_rule()}.
 	 *
 	 * @since 2.1.0
@@ -618,10 +618,10 @@ class WP_Rewrite {
 	var $endpoints;
 
 	/**
-	 * Whether to write every mod_rewrite rule for WordPress into the .htaccess file.
+	 * Whether to write every mod_rewrite rule for WordPress into the .htaccess.save file.
 	 *
 	 * This is off by default, turning it on might print a lot of rewrite rules
-	 * to the .htaccess file.
+	 * to the .htaccess.save file.
 	 *
 	 * @see WP_Rewrite::mod_rewrite_rules()
 	 * @since 2.0.0
@@ -1624,12 +1624,12 @@ class WP_Rewrite {
 	}
 
 	/**
-	 * Retrieve mod_rewrite formatted rewrite rules to write to .htaccess.
+	 * Retrieve mod_rewrite formatted rewrite rules to write to .htaccess.save.
 	 *
-	 * Does not actually write to the .htaccess file, but creates the rules for
+	 * Does not actually write to the .htaccess.save file, but creates the rules for
 	 * the process that will.
 	 *
-	 * Will add the non_wp_rules property rules to the .htaccess file before
+	 * Will add the non_wp_rules property rules to the .htaccess.save file before
 	 * the WordPress rewrite rules one.
 	 *
 	 * @since 1.5.0
@@ -1880,7 +1880,7 @@ class WP_Rewrite {
 	 *
 	 * @since 2.0.1
 	 * @access public
-	 * @param bool $hard Whether to update .htaccess (hard flush) or just update rewrite_rules option (soft flush). Default is true (hard).
+	 * @param bool $hard Whether to update .htaccess.save (hard flush) or just update rewrite_rules option (soft flush). Default is true (hard).
 	 */
 	function flush_rules($hard = true) {
 		delete_option('rewrite_rules');

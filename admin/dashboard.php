@@ -1,6 +1,47 @@
 <?php
 	session_start();
 	require_once('include/auth.php');
+    include('../include/functions.php');
+
+    ini_set ('display_errors', '1');
+
+
+
+// Total User counts
+    $query = $obj->query_db("SELECT COUNT(*) FROM `user`");
+    $members = $obj->fetch_db_array($query);
+
+    // Total User Monthly counts
+    $monthly = $obj->query_db("SELECT COUNT(*) FROM `user` WHERE MONTH(user_date_added) = MONTH(CURDATE()) AND YEAR(user_date_added) = YEAR(CURDATE())");
+    $monthlyMm = $obj->fetch_db_array($monthly);
+
+    // Corporate User
+    $corpUser = $obj->query_db("SELECT COUNT(*) FROM `user` WHERE `co_company_name` != ''");
+    $corp = $obj->fetch_db_array($corpUser);
+
+    // Todays Order
+    $todays = $obj->query_db("SELECT COUNT(*) FROM `orders` WHERE `order_date_added` = CURDATE()");
+    $todaysOrder = $obj->fetch_db_array($todays);
+
+    // Pending Orders
+    $pending = $obj->query_db("SELECT COUNT(*) FROM `orders` WHERE `order_status` = 'to_confirm'");
+    $pendingOrder = $obj->fetch_db_array($pending);
+
+    // Monthly Revenue
+    $revenue = $obj->query_db("SELECT ROUND(SUM(order_total)) AS `value_sum` FROM `orders` WHERE MONTH(order_date_added) = MONTH(CURDATE())");
+    $monthlyRev = $obj->fetch_db_array($revenue);
+    $rev = $monthlyRev['value_sum'];
+
+    // Recent updates & activities  - Today's Order
+
+    $updates = $obj->query_db("SELECT * FROM `orders` WHERE `order_date_added` = CURDATE() ORDER BY `order_date_added` DESC LIMIT 0, 10");
+    $orderUps = $obj->fetch_db_array($updates);
+
+    // Today's Users
+    $userUps = $obj->query_db("SELECT * from `user` WHERE `user_date_added` = CURDATE() ORDER BY `user_date_added` DESC LIMIT 0, 10");
+    $users = $obj->fetch_db_array($userUps);
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +56,7 @@
         <!-- Link shortcut icon-->
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Link css-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/zice.style.css"/>
         <link rel="stylesheet" type="text/css" href="css/icon.css"/>
         <link rel="stylesheet" type="text/css" href="css/ui-custom.css"/>
@@ -98,114 +140,77 @@
 				</div>
 				<div class="clear"></div>
 				<div class="onecolumn">
-					<div class="header"><span><span class="ico gray stats_lines"></span>Site Statistics</span>
+					<div class="header"><span><span class="ico gray stats_lines"></span>JFF Statistics</span>
 					</div>
 					<div class="clear"></div>
 					<div class="content">
 						<br class="clear" />
 						<div class="grid1 rightzero">
-							<div class="shoutcutBox"> <span class="ico color chat-exclamation"></span>  <strong>0</strong>  <em>pending orders</em>
+							<div class="shoutcutBox"> <span class="fa fa-cart-arrow-down fa-2x" style="color: green"></span>  <strong><?php echo $pendingOrder[0];?></strong>  <em>Pending orders</em>
 							</div>
 							<div class="breaks"><span></span></div>
 							<!-- // breaks -->
-							<div class="shoutcutBox"> <span class="ico color item"></span>  <strong>0</strong>  <em> Item in shop</em>
+							<div class="shoutcutBox"> <span class="fa fa-gbp fa-2x" style="color: green"></span>  <strong><?php echo $monthlyRev[0];?></strong>  <em> Monthly Revenue</em>
 							</div>
-							<div class="shoutcutBox"> <span class="ico color group"></span>  <strong>0</strong>  <em>Total Member</em>
+
+                            <div class="shoutcutBox"> <span class="fa fa-users fa-2x" style="color: green"></span>  <strong><?php echo $members[0]; ?></strong>  <em>Total Member</em>
+
 							</div>
-							<div class="shoutcutBox"> <span class="ico color emoticon_grin"></span>  <strong>0</strong>  <em>New Register In This Month</em>
+							<div class="shoutcutBox"> <span class="fa fa-user fa-2x" style="color: green"></span>  <strong><?php echo $monthlyMm[0];?></strong>  <em>Registered User This Month</em>
 							</div>
 							<div class="breaks"><span></span>
 							</div>
-							<div class="shoutcutBox"> <span class="ico color emoticon_in_love"></span>  <strong>359</strong>  <em>Today view pages</em>
+							<div class="shoutcutBox"> <span class="fa fa-university fa-2x" style="color: green"></span>  <strong><?php echo $corp[0]; ?></strong>  <em>Corporate Users</em>
 							</div>
-							<div class="shoutcutBox"> <span class="ico color clipboard"></span>  <strong>359</strong>  <em>Custom Orders</em>
+							<div class="shoutcutBox"> <span class="fa fa-motorcycle fa-2x" style="color: green"></span>  <strong><?php echo $todaysOrder[0];?></strong>  <em>Today's Order</em>
 							</div>
 						</div>
 						<div class="grid3">
 							<div style="width:100%;height:415px; margin-left:25px">
-								<table class="chart" style="width : 100%;">
-									<thead>
-										<tr>
-											<th width="10%"></th>
-											<th width="25%" style="color : #bedd17;">Visiters</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>1</th>
-											<td>100</td>
-										</tr>
-										<tr>
-											<th>2</th>
-											<td>500</td>
-										</tr>
-										<tr>
-											<th>3</th>
-											<td>600</td>
-										</tr>
-										<tr>
-											<th>4</th>
-											<td>700</td>
-										</tr>
-										<tr>
-											<th>5</th>
-											<td>620</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+                                <div class="onecolumn">
+                                    <div class="header"><span><span class="ico gray notepad"></span> Latest Updates</span></div>
+                                    <br class="clear" />
+                                    <div class="content tableName">
+                                        <table class="display data_table">
+                                            <thead>
+                                            <tr>
+                                                <th width="224">
+                                                    <div style="text-align:left; margin-left:10px">Updates</div>
+                                                </th>
+
+                                                <th width="195">
+                                                    <div style="text-align:right; ">Date</div>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="msg">
+                                                        <div class="msg_icon new"></div>
+                                                        <div class="msg_topic">Recent Order Updates  <span> name</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="msg_date">a few seconds ago <span>2012/02/02 </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
 						</div>
 						<div class="clear"></div>
 					</div>
 				</div>
 				<!-- // End onecolumn -->
 				<!--// two column window -->
-				<div class="onecolumn">
-					<div class="header"><span><span class="ico gray notepad"></span> Last Contact</span></div>
-					<br class="clear" />
-					<div class="content tableName">
-						<table class="display data_table">
-							<thead>
-								<tr>
-									<th width="224">
-										<div style="text-align:left; margin-left:10px">Topic</div>
-									</th>
-									<th width="195">
-										<div style="text-align:right; ">Date</div>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="msg">
-											<div class="msg_icon new"></div>
-											<div class="msg_topic"><strong>SystemSite</strong>  <span>Topic name</span>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="msg_date">a few seconds ago <span>2012/02/02 </span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="msg">
-											<div class="msg_icon new"></div>
-											<div class="msg_topic"><strong>Pinyo</strong>  <span>Topic  name</span>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="msg_date">55 seconds ago <span>2012/02/02 </span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
 				<div class="clear"></div>
 				<?php include('templates/footer.php');?>
 			</div>

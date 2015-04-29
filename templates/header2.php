@@ -240,7 +240,7 @@ function youAreHere($url) {
 
         <li class="twitter-button"><a href="https://twitter.com/JustFastFood" class="twitter-follow-button" data-width="85px" data-show-count="true" data-lang="en" data-show-screen-name="false">Follow</a></li>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
       </ul>
       <section data-content="modal-cart"></section>
     </div>

@@ -3,6 +3,22 @@
 	include_once('../email-send.php');
 	include_once('../order-movement.php');
 
+require_once "Services/Nexmo/NexmoMessage.php";
+
+
+$apiKey = "6aeaa543";
+
+$apiSecret = "aece4e30";
+
+$nexmo_sms = new nexmoMessage($apiKey, $apiSecret);
+if($nexmo_sms->inboundText()){
+    $nexmo_sms->reply("You said " . $nexmo_sms->text);
+    mail('dev@just-fastfood.com', 'Reply SMS', $nexmo_sms->text);
+
+} else {
+    mail('dev@just-fastfood.com', 'Reply SMS', 'NO SMS');
+}
+
 	$from = $_REQUEST['msisdn'];
 	$body = $_REQUEST['text'];
 

@@ -91,6 +91,12 @@ p {
     padding:60px 0;
 }
 
+@media all {
+    .login-reset-btn {
+        display: inline;
+    }
+}
+
 .slider_light_brown {
     background-image:url(../images/fast_food_icon.png);
     background-attachment:fixed;
@@ -1949,7 +1955,7 @@ div.whole-wrap,.order-details-wrap,.modal-body,.panel,.order-details-wrap,.pay-w
 }
 
 @media only screen and (max-width: 1024px) {
-    .sign-up-wrap input[type=text] {
+    .sign-up-wrap input[type=text], input[type=password] {
         width:60%;
     }
 }

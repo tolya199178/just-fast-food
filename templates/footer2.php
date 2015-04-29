@@ -79,9 +79,9 @@
 <script src="js/twitterFetcher.min.js"></script>
 <script src="//platform.twitter.com/widgets.js"></script>
 <script src="js/tweetie.min.js"></script>
-<script src="../css/NotificationStyles/js/notificationFx.js"></script>
-<script src="../css/NotificationStyles/js/modernizr.custom.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+<script src="js/notificationFx.js"></script>
 
 <script>
   $(document).ready(function() {

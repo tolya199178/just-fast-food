@@ -66,7 +66,7 @@ if( isset($_SESSION['access_key']) && isset($_POST['access']) && ($_POST['access
       SENDMAIL($STRSEND , false);
 
       $Verify_Code = md5($_POST['user_email']) .'_' . rand();
-      mysql_query("INSERT INTO `verify_email` VALUES (NULL, '". $Verify_Code ."', '". $_POST['user_email'] ."', NULL) ");
+      $obj->query_db("INSERT INTO `verify_email` VALUES (NULL, '". $Verify_Code ."', '". $_POST['user_email'] ."', NULL) ");
 
       $STRSEND['type'] = 'verify-acct';
       $STRSEND['email'] = $_POST['user_email'];

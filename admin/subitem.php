@@ -42,7 +42,7 @@
 			if($upload['error'] == 0){
 				$value = "NULL, ";
 				foreach($ARRAY as $values) {
-					$value .= "'".mysql_real_escape_string($_POST[$values])."',";
+					$value .= "'".mysqli_real_escape_string($obj->con,$_POST[$values])."',";
 				}
 				$value = substr($value ,0 ,-1);
 				$result = INSERT($value ,'subitems' ,false ,'');

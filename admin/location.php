@@ -1,5 +1,6 @@
 <?php
 	session_start();
+ini_set('display_errors', 1);
 	require_once('include/auth.php');
 	include("../include/functions.php");
 	$INSERT = 'false';
@@ -55,7 +56,7 @@
 					if($values == 'location_postcode'){
 						$value .= "'".json_encode($p)."',";
 					} else {
-						$value .= "'".mysql_real_escape_string($_POST[$values])."',";
+						$value .= "'".mysqli_real_escape_string($obj->con, $_POST[$values])."',";
 					}
 				}
 				$value .= "NULL";

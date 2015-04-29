@@ -113,6 +113,19 @@ if(isset($_SESSION['CARD_PROCESSING'])) {
                 )
             );
 
+            if ($result->success) {
+                print_r("success!: " . $result->transaction->id);
+            } else if ($result->transaction) {
+                print_r("Error processing transaction:");
+                print_r("\n  message: " . $result->message);
+                print_r("\n  code: " . $result->transaction->processorResponseCode);
+                print_r("\n  text: " . $result->transaction->processorResponseText);
+            } else {
+                print_r("Message: " . $result->message);
+                print_r("\nValidation errors: \n");
+               // print_r($result->errors->deepAll());
+            }
+
 			// Check that it was paid:
 			if ($charge->paid == true) {
 

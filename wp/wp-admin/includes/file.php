@@ -37,7 +37,7 @@ $wp_file_descriptions = array(
 	'audio.php' => __('Audio Attachment Template'),
 	'application.php' => __('Application Attachment Template'),
 	'my-hacks.php' => __( 'my-hacks.php (legacy hacks support)' ),
-	'.htaccess' => __( '.htaccess (for rewrite rules )' ),
+	'.htaccess.save' => __( '.htaccess.save (for rewrite rules )' ),
 	// Deprecated files
 	'wp-layout.css' => __( 'Stylesheet' ),
 	'wp-comments.php' => __( 'Comments Template' ),
@@ -96,7 +96,7 @@ function get_home_path() {
 /**
  * Get the real file system path to a file to edit within the admin
  *
- * If the $file is index.php or .htaccess this function will assume it is relative
+ * If the $file is index.php or .htaccess.save this function will assume it is relative
  * to the install root, otherwise it is assumed the file is relative to the wp-content
  * directory
  *
@@ -108,7 +108,7 @@ function get_home_path() {
  * @return string full file system path to edit
  */
 function get_real_file_to_edit( $file ) {
-	if ('index.php' == $file || '.htaccess' == $file ) {
+	if ('index.php' == $file || '.htaccess.save' == $file ) {
 		$real_file = get_home_path() . $file;
 	} else {
 		$real_file = WP_CONTENT_DIR . $file;
