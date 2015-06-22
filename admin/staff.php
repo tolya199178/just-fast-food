@@ -3,6 +3,7 @@ session_start();
 require_once('include/auth.php');
 include("../include/functions.php");
 include_once('../include/sms/send.php');
+include_once('../include/email-send.php');
 
 $INSERT           = 'false';
 $ERROR_UPDATE     = false;
@@ -41,7 +42,7 @@ if (isset($_POST['add'])) {
     }
     $val   = substr($val, 0, -1);
     $query = "UPDATE  `" . $TABLE_NAME . "` SET " . $val . "  WHERE `" . $TABLE_ID . "` = '" . $_POST[$TABLE_ID] . "'";
-    $obj->query_db($query) or die(mysql_error());
+    $obj->query_db($query) or die(mysqli_error($obj->con));
     $INSERT           = 'true';
     $result           = 'true';
     $successUpdateMsg = "Successfully Updated";
@@ -51,7 +52,7 @@ if (isset($_POST['add'])) {
       switch ($values) {
 
         case 'staff_password' :
-          $value .= "'" . md5(mysql_real_escape_string($_POST[$values])) . "',";
+          $value .= "'" . md5(mysqli_real_escape_string($obj->con, $_POST[$values])) . "',";
           break;
 
         case 'staff_postcode' :
@@ -60,7 +61,7 @@ if (isset($_POST['add'])) {
           break;
 
         default :
-          $value .= "'" . mysql_real_escape_string($_POST[$values]) . "',";
+          $value .= "'" . mysqli_real_escape_string($obj->con, $_POST[$values]) . "',";
           break;
       }
     }
@@ -71,10 +72,12 @@ if (isset($_POST['add'])) {
     $SRTSEND['staff_name'] = $_POST['staff_name'];
     SENDSMS($_POST['staff_phoneno'], $SRTSEND , 'new_staff_added');
 
-    try {
-      SENDMAIL($SRTSEND, true);
-    } catch (Exception $ex) {
-    }
+//    try {
+//        $SRTSEND['type'] = '';
+//      SENDMAIL($SRTSEND, true);
+//    } catch (Exception $ex) {
+//        echo $ex;
+//    }
 
   }
 }
@@ -83,7 +86,7 @@ $isSearch = false;
 if (isset($_POST['SEARCH'])) {
   $isSearch     = true;
   $query_search = "SELECT COUNT(*) AS NumberOfOrders FROM `staff_order` WHERE  `staff_order_status` = 'complete' AND `staff_order_staff_id` = '" . $_POST['staff_serach_id'] . "' AND `staff_order_date_added` BETWEEN '" . $_POST['search_from'] . "' AND '" . $_POST['search_to'] . "'";
-  $valueOBJSearch = $obj->query_db($query_search) or die(mysql_error());
+  $valueOBJSearch = $obj->query_db($query_search) or die(mysqli_error($obj->con));
   $array_Search = $obj->fetch_db_assoc($valueOBJSearch);
 }
 if (isset($_GET['edit']) && isset($_GET['id'])) {
@@ -230,7 +233,7 @@ if (isset($_GET['edit']) && isset($_GET['id'])) {
   }
   ?>
   <li>
-    <a href="#tab1" id="2">Add New Delivery Guy</a>
+    <a href="#tab1" id="2">Add New Delivery Staff</a>
   </li>
   <li>
     <a href="#tab2" id="3"> Browse All
@@ -238,7 +241,7 @@ if (isset($_GET['edit']) && isset($_GET['id'])) {
     </a>
   </li>
   <li>
-    <a href="#tab3" id="4">Their Orders</a>
+    <a href="#tab3" id="4">Driver's Orders</a>
   </li>
   <li>
     <a href="#tab4" id="5">Total Orders</a>
@@ -286,7 +289,10 @@ if (isset($_GET['edit']) && isset($_GET['id'])) {
             </div>
           </div>
           <div class="section last">
-            <label>Phone No</label>
+            <label>Phone No
+              <small>
+                  For real-time notifications & updates
+              </small></label>
             <div>
               <input type="text" class="validate[required] large" name="staff_phoneno" id="staff_phoneno" value="<?= $ARRAYTEMP['staff_phoneno']; ?>">
             </div>
@@ -294,7 +300,7 @@ if (isset($_GET['edit']) && isset($_GET['id'])) {
           <div class="section last">
             <label>Post Code
               <small>
-                Specific Postcode For This Guy
+                Driver's Base Postcode
               </small>
             </label>
             <div>
@@ -303,7 +309,7 @@ if (isset($_GET['edit']) && isset($_GET['id'])) {
 
           </div>
           <div class="section">
-            <label>Max Distence Covered <small>Distence in miles</small></label>
+            <label>Max Distance Covered <small>Distance in miles</small></label>
             <div>
               <input type="text" class="validate[required] sDec" name="staff_max_distence" id="staff_max_distence" value="<?= $ARRAYTEMP['staff_max_distence']; ?>">
             </div>

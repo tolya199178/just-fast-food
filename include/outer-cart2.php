@@ -1,5 +1,3 @@
-
-
 <?php
 session_start();
 //unset($_SESSION['CART']);
@@ -42,6 +40,13 @@ include('functions.php');
 .cart-list .del {
     margin: -4px;
     padding: 1px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+    .arrival {
+        display: none;
+    }
+
 }
 </style>
         <h3 class="cart-header">Cart</h3>
@@ -135,7 +140,7 @@ include('functions.php');
                   } else {
                     $result = date('g:i a', strtotime($_SESSION['order_delivery_time']));
                   }
-                   echo '<div class="alert alert-info"><i class="fa fa-clock-o"> Arrival Time: <strong>'.$result.'</strong></i></div>';
+                   echo '<div class="alert alert-info arrival"><i class="fa fa-check-circle"> </i><i style="font-size: small; font-family: "Lato"> Please specify choice of drinks and sides on the next page.</i></div>';
                     echo '<div class="button-cart"><button type="button" class="btn btn-lg btn-primary btn-block Checkout-Button" >Check Out</button></div>';
                 }
                 echo '<div class="loading-cart" style="display:none;"><img src="images/loader.gif" alt="" /></div>';

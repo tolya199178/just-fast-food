@@ -1,7 +1,5 @@
 <?php
 session_start();
-//ob_start("ob_gzhandler");
-ini_set ('display_errors', '1');
 
 if( isset($_COOKIE['jjf_username']) && isset($_COOKIE['jjf_password']) ) {
   $_SESSION['user'] = $_COOKIE['jjf_username'];
@@ -34,12 +32,12 @@ if( isset($_SESSION['access_key']) && isset($_POST['access']) && ($_POST['access
     $value = "'', ";
     foreach($ARRAY as $values) {
       if($values == "user_password") {
-        $value .= "'".md5(mysql_real_escape_string($_POST[$values]))."', ";
+        $value .= "'".md5(mysqli_real_escape_string($obj ->con, $_POST[$values]))."', ";
       } else if ($values == "user_screen_name" ) {
         $usernameFEmail = explode('@', $_POST['user_email']);
-        $value .= "'".mysql_real_escape_string($usernameFEmail[0])."', ";
+        $value .= "'".mysqli_real_escape_string($obj ->con, $usernameFEmail[0])."', ";
       } else {
-        $value .= "'".mysql_real_escape_string($_POST[$values])."', ";
+        $value .= "'".mysqli_real_escape_string($obj->con, $_POST[$values])."', ";
       }
     }
     $value .= "'', '', '', '', '', NULL";
@@ -66,7 +64,7 @@ if( isset($_SESSION['access_key']) && isset($_POST['access']) && ($_POST['access
       SENDMAIL($STRSEND , false);
 
       $Verify_Code = md5($_POST['user_email']) .'_' . rand();
-      $obj->query_db("INSERT INTO `verify_email` VALUES (NULL, '". $Verify_Code ."', '". $_POST['user_email'] ."', NULL) ");
+      $obj -> query_db("INSERT INTO `verify_email` VALUES (NULL, '". $Verify_Code ."', '". $_POST['user_email'] ."', NULL) ");
 
       $STRSEND['type'] = 'verify-acct';
       $STRSEND['email'] = $_POST['user_email'];
@@ -240,7 +238,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4 class="modal-title"></h4>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="font-weight: 300">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn" data-dismiss="modal">Try Again</button>

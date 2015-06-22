@@ -82,9 +82,9 @@ if(isset($_POST['add'])) {
       foreach($ARRAY as $values) {
         echo($values);
         if($values == "type_picture") {
-          $value .= "'".mysql_real_escape_string($upload['img_name'])."',";
+          $value .= "'".mysqli_real_escape_string($obj->con, $upload['img_name'])."',";
         } else {
-          $value .= "'".mysql_real_escape_string($_POST[$values])."',";
+          $value .= "'".mysqli_real_escape_string($obj->con, $_POST[$values])."',";
         }
       }
       $value .= " NULL";
@@ -252,7 +252,6 @@ if($PARTNER == "true" && isset($_GET['id'])) {
 
   if($INSERT == 'true') {
     if($result) {
-      print_r($result);
       if($successUpdateMsg != "") {
         echo '<script type="text/javascript">window.onload = function() {showSuccess("'.$successUpdateMsg.'",5000);}</script>';
       } else {
@@ -265,6 +264,7 @@ if($PARTNER == "true" && isset($_GET['id'])) {
   if($ERROR_UPDATE != false) {
     echo '<script type="text/javascript">window.onload = function() {showError("'.$ERROR_UPDATE.'",7000);}</script>';
   }
+
   ?>
 </head>
 <body class="dashborad">
@@ -332,7 +332,7 @@ if($PARTNER == "true" && isset($_GET['id'])) {
                     <div class="section last">
                       <label>Restaurant Password<small>(Password to access Restaurant Profile)</small></label>
                       <div>
-                        <input type="text" class="validate[required] large" name="type_password" id="type_password" value="<?php echo $ARRAYTEMP['type_password']?>">
+                        <input type="password" class="validate[required] large" name="type_password" id="type_password" value="<?php echo $ARRAYTEMP['type_password']?>">
                       </div>
                     </div>
 
@@ -406,7 +406,7 @@ if($PARTNER == "true" && isset($_GET['id'])) {
                     <div class="section last">
                       <label>Special Offer</label>
                       <div>
-                        After Order of &pound; <input type="text" class="sDec" name="type_special_offer[pound]" value="<?php echo $ARRAYTEMP['type_special_offer']['pound']?>"><br/>
+                       <input type="text" class="sDec" name="type_special_offer[pound]" value="<?php echo $ARRAYTEMP['type_special_offer']['pound']?>"><br/>
                         <input type="text" class="sDec" name="type_special_offer[off]"  value="<?php echo $ARRAYTEMP['type_special_offer']['off']?>"> % off
                       </div>
                     </div>

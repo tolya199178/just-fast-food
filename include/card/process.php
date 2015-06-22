@@ -92,14 +92,6 @@ if(isset($_SESSION['CARD_PROCESSING'])) {
             Braintree_Configuration::publicKey('86pmzd5bzdysnn5q');
             Braintree_Configuration::privateKey('341f05ee992ec4bec234c6c52453c783');
 
-			// Charge the order:
-			/*$charge = Stripe_Charge::create(array(
-				"amount" => $amount, // amount in cents, again
-				"currency" => "gbp",
-				"card" => $token,
-				"description" => $description
-				)
-			);*/
 
             // Charge the order
 

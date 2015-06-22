@@ -2,32 +2,6 @@
 
 
 
-/**
-
-
-
- * Created by JetBrains PhpStorm.
-
-
-
- * User: Kunle
-
-
-
- * Date: 25/05/14
-
-
-
- * Time: 18:20
-
-
-
- * To change this template use File | Settings | File Templates.
-
-
-
- */
-
 function youAreHere($url) {
 
 
@@ -97,6 +71,25 @@ function youAreHere($url) {
     cursor: pointer;
   }
 
+  .btn-header1 {
+      background: none repeat scroll 0 0 #ff6161;
+      box-shadow: 0 0 0 rgba(0,0,0,0.4);
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      letter-spacing: .07em;
+      line-height: 0.478571;
+      text-transform: none;
+      text-align: center;
+      transition: all .3s linear 0;
+      vertical-align: middle;
+      display: inline-block;
+      border: medium none;
+      padding: 15px 1.5em;
+      font-font: 'Lato',"Open Sans";
+  }
+
   li .cart-items {
     font-size: 11px;
     -webkit-font-smoothing: antialiased;
@@ -139,6 +132,10 @@ function youAreHere($url) {
 
 
 
+
+
+
+
 </style>
 <div class="header">
 
@@ -158,10 +155,7 @@ function youAreHere($url) {
 
         <?php
 
-
-
         if(isset($_SESSION['user'])) {
-
 
 
           if(isset($_SESSION['user_type'])){
@@ -187,10 +181,12 @@ function youAreHere($url) {
           } else {
 
             echo '<li><a href="my-profile.php" title="Go to My Profile"><i class="fa fa-user"></i> '.$_SESSION['user'].'</a></li>';
+            echo '<li><a href="mailto:info@just-fastfood.com" title="Suggest A Restaurant"><i class="fa fa-cutlery"></i> Suggest A Restaurant?</a></li> ';
+
           }
 
           echo '<li><a href="include/signout.php" title="Signout from your current session"><i class="fa fa-unlock-alt"></i> Signout</a></li>';
-          echo '<li><a href="#" onclick="return SnapEngage.startLink();"><i class="fa fa-weixin"></i> Live Chat</a> ';
+
 
         } else {
 
@@ -200,8 +196,15 @@ function youAreHere($url) {
 
           <li><a href="login.php"><i class="fa fa-user"></i> Sign In</a></li>
           <li><a href="restaurant-owner.php"><i class="fa fa-cutlery"></i> Restaurant Owner?</a></li>
-          <li><a href="../driver-apply.php" class="button btnClass" id="hiring">We're hiring!</a></li>
-        <?php } ?>
+
+           <?php }
+          echo ' <li><a href="#" onclick="return SnapEngage.startLink();"><i class="fa fa-weixin"></i>Live Chat</a>';
+            if(!(isset($_SESSION['user']))) {
+                ?>
+                <li><a href="../driver-apply.php" class="button btnClass" id="hiring">We're hiring!</a></li>
+        <?php
+          }
+          ?>
 
       </ul>
     </div>
@@ -222,25 +225,25 @@ function youAreHere($url) {
         padding: 10px;
         border: 2px solid #ddd;      
     }
+
+    .twitter-button {
+        border-radius: 4px; /* to mimic the curved edges of the count box */
+        border-right: 1px solid #AAAAAA; /* this is the width and color of the count box border */
+        height: 20px; /* this height works for the medium button */
+        width: 88px; /* precise width to hide the word */
+        overflow: hidden; /* actually hides the word */
+    }
     </style>
     <div class="Social_counters">
       <ul>
-        <?php
 
-        if(isset($_SESSION['user'])) {
+          <li class="basket-counter" data-action="show-hide-modal-cart"><a href="#"><i class="glyphicon glyphicon-shopping-cart icon-flipped" style="top: -1px"></i></a> <span class="cart-items" id="header-cart-items" data-show="0">0</span></li>
 
-          ?>
-          <li class="basket-counter" data-action="show-hide-modal-cart"><a href="#"><i class="glyphicon glyphicon-shopping-cart icon-flipped" style="top: -1px"></i></a> <span class="cart-items" id="header-cart-items" data-show="0">0</span></li> 
-        <?php
-
-        }
-        ?>
-        <li><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJustFastFoods&amp;width81&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:81px; height:21px;" allowTransparency="true"></iframe></li>
+          <li><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJustFastFoods&amp;width81&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:81px; height:21px;" allowTransparency="true"></iframe></li>
 
 
-        <li class="twitter-button"><a href="https://twitter.com/JustFastFood" class="twitter-follow-button" data-width="85px" data-show-count="true" data-lang="en" data-show-screen-name="false">Follow</a></li>
+        <li class="twitter-button"><a href="https://twitter.com/JustFastFood" class="twitter-follow-button" data-width="85px" data-show-count="false" data-lang="en" data-show-screen-name="false">Follow</a></li>
 
-        <script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
       </ul>
       <section data-content="modal-cart"></section>
     </div>
@@ -248,7 +251,7 @@ function youAreHere($url) {
 
 
 
-    <div class="logo col-lg-4 col-sm-12 col-md-4"><a href="../index.php"><img src="images/logo2.png" class="img-responsive" alt="food delivery" ></a></div>
+    <div class="logo col-lg-4 col-sm-12 col-md-4"><a href="/"><img src="images/logo2.png" class="img-responsive" alt="food delivery" ></a></div>
 
 
 
@@ -258,17 +261,17 @@ function youAreHere($url) {
 
       <ul class="nav-list">
 
-        <li><a <?php youAreHere('index.php'); ?> href="index.php">Home</a></li>
+        <li><a <?php youAreHere('/'); ?> href="/">Home</a></li>
 
-        <li><a <?php youAreHere('what-we-do'); ?> href="what-we-do.php">What we do</a></li>
+        <li><a <?php youAreHere('what-we-do'); ?> href="what-we-do">What we do</a></li>
 
-        <li><a <?php youAreHere('how-it-works'); ?> href='how-it-works.php'>How it works</a></li>
+        <li><a <?php youAreHere('how-it-works'); ?> href='how-it-works'>How it works</a></li>
 
         <li><a href="javascript:;" id="res-menu-modal-init">Restaurants</a></li>
 
-        <li><a <?php youAreHere('contact'); ?> href="contact.php">Contact</a></li>
+        <li><a <?php youAreHere('contact'); ?> href="contact">Contact</a></li>
 
-        <li><a <?php youAreHere('faq'); ?> href="faq.php">FAQ</a></li>
+        <li><a <?php youAreHere('faq'); ?> href="faq">FAQ</a></li>
 
       </ul>
 
@@ -283,6 +286,8 @@ function youAreHere($url) {
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,900' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
+
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -387,7 +392,7 @@ function youAreHere($url) {
 
           <div class="form-group has-feedback">
 
-            <label class="control-label" for="user_phone">Enter your postcode</label>
+            <label class="control-label" for="user_phone" style="font-size: 1em">Enter your postcode <span class="required">*</span></label>
 
             <div class="col-lg-6">
 
@@ -396,7 +401,7 @@ function youAreHere($url) {
           </div>
         </div>
         <div class="modal-footer">
-          <input type="submit" value="Search" name="submit" class="btn btn-custom"/>
+          <input type="submit" value="Search" name="submit" class="btn-header1 btn-custom"/>
         </div>
       </div>
     </form>
@@ -408,7 +413,6 @@ function youAreHere($url) {
 
 
 
-</div><!-- /.modal -->
 
 
 

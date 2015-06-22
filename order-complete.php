@@ -6,16 +6,17 @@ session_start();
 
 ob_start("ob_gzhandler");
 
-/* echo '<pre>';
+ini_set ('display_errors', '1');
+ /*echo '<pre>';
 
-print_r($_SESSION);
+var_dump($_SESSION);
 
-echo '</pre>'; */
+echo '</pre>';*/
 
 
 
 include('include/functions.php');
-
+include('include/order-movement.php');
 
 
 if(!isset($_SESSION['CURRENT_ORDER_ID']) && isset($_SESSION['user'])){
@@ -68,6 +69,9 @@ if($result_order['order_status'] == 'assign') {
 
 }
 
+echo '<pre>';
+var_dump($_SESSION['CURRENT_ORDER_ID']);
+echo '</pre>';
 
 
 ?>
@@ -352,7 +356,8 @@ if($result_order['order_status'] == 'assign') {
 
                         <ul class="list-group col-md-6 col-md-offset-3">
 
-                            <?php if($return_status == 'true') {?>
+                            <?php if($return_status == 'true')  { var_dump($_SESSION);?>
+
 
                                 <li class="list-group-item">Thank You </span><strong><?php echo $_SESSION['user'];?></strong>!</p> Please check your order status below.</li>
 

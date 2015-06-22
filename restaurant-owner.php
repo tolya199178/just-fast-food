@@ -4,13 +4,11 @@ session_start();
 ob_start("ob_gzhandler");
 include("include/functions.php");
 
+ini_set ('display_errors', '1');
+
 $hide_form = "false";
 
-
-
-$ARRAY = array( 'managerName', 'email', 'phoneno', 'city', 'postcode', 'resName','j_rest_delivery');
-
-
+$ARRAY = array( 'managerName', 'j_email', 'j_phoneno', 'j_city', 'j_postcode', 'j_rest_name', 'j_rest_type', 'j_rest_delivery');
 
 foreach($ARRAY as $v) {
 
@@ -18,14 +16,13 @@ foreach($ARRAY as $v) {
 
 }
 
-
-
 if(isset($_SESSION['access_key']) && isset($_POST['access']) && $_POST['access'] == $_SESSION['access_key']) {
 
 
 
     if(isset($_POST['SUBMIT'])) {
 
+        header('Content-Type: application/json');
 
 
         include_once("include/email-send.php");
@@ -44,7 +41,7 @@ if(isset($_SESSION['access_key']) && isset($_POST['access']) && $_POST['access']
 
             foreach($ARRAY as $values) {
 
-                $value .= "'".mysql_real_escape_string($_POST[$values])."', ";
+                $value .= "'".mysqli_real_escape_string($obj->con, $_POST[$values])."', ";
 
             }
 
@@ -55,58 +52,76 @@ if(isset($_SESSION['access_key']) && isset($_POST['access']) && $_POST['access']
             $value .= "NULL";
 
 
+            echo '<pre>';
+            var_dump($value);
+            echo '</pre>';
 
             $extra = "`j_email` = '".$_POST['j_email']."'";
+            try {
+                $result = INSERT($value ,'join_restaurant' ,false,'');
 
-            $result = INSERT($value ,'join_restaurant' ,'unique' ,$extra);
+                if($result) {
+
+                    $_SESSION['success'] = "Thank you for your interest in Just-FastFood. One of our Sales advisors will be in touch soon!";
+
+                    $hide_form = "true";
+
+                    unset($_SESSION['access_key']);
+
+                    $STRSEND = array(
+
+                        'type' => 'new-join_rest',
+
+                        'user_email' => $_POST['j_email'],
+
+                        'rest_name' => $_POST['j_rest_name'],
+
+                        'post_code' => $_POST['j_postcode'],
+
+                        'user_name' => $_POST['managerName'],
+
+                        'phone_no' => $_POST['j_phoneno']
+
+                    );
+
+                    try {
+                        SENDMAIL($STRSEND , true);
+                    } catch (Exception $ex) {
+                        error_log('An error occurred '.$ex);
+                    }
+
+                    echo json_encode(array(
+                        'status' => 'dispatched',
+                        'message' => $_SESSION['success']
+                    ));
+
+                    exit();
+
+                } else {
+
+                    foreach($ARRAY as $v) {
+
+                        $ARRAYTEMP[$v] = $_POST[$v];
+
+                    }
 
 
 
-            if($result) {
+                    $_SESSION['error'] = "Email Address Already Exist!";
 
+                    echo json_encode(array(
+                        'status' => 'account_exist',
+                        'message' => "Seems you've tried to contact us before. Please email support@just-fastfood.com to proceed with your inquiries."
+                    ));
 
-
-                $_SESSION['success'] = "Thank you for your interest in Just-FastFood. One of our Sales advisors will be in touch soon!";
-
-
-
-                $hide_form = "true";
-
-                unset($_SESSION['access_key']);
-
-                $STRSEND = array(
-
-                    'type' => 'new-join_rest',
-
-                    'email' => $_POST['email'],
-
-                    'user_email' => $_POST['email'],
-
-                    'rest_name' => $_POST['resName'],
-
-                    'post_code' => $_POST['postcode'],
-
-                    'user_name' => $_POST['managerName'],
-
-                    'phone_no' => $_POST['phoneno']
-
-                );
-
-                SENDMAIL($STRSEND , true);
-
-            } else {
-
-                foreach($ARRAY as $v) {
-
-                    $ARRAYTEMP[$v] = $_POST[$v];
-
+                    exit();
                 }
-
-
-
-                $_SESSION['error'] = "Email Address Already Exist!";
-
+            } catch (Exception $exception) {
+                error_log($exception);
+                print_r($exception);
             }
+
+
 
         } else {
 
@@ -119,6 +134,14 @@ if(isset($_SESSION['access_key']) && isset($_POST['access']) && $_POST['access']
 
 
             $_SESSION['error']  = "ERROR!! Invalid Post Code. <span style='font-size:13px'>( Please enter only full UK postode)</span>";
+
+            echo json_encode( array(
+                'status'       => 'zip_code',
+
+                'message'      => "Invalid Post Code, Please enter only full UK postode"
+            ));
+
+            exit();
 
         }
 
@@ -193,19 +216,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
 
 
-  <script>
-    (function(f,b,g){
-      var xo=g.prototype.open,xs=g.prototype.send,c;
-      f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
-      f._hjSettings={hjid:7206, hjsv:2};
-      function ls(){f.hj.documentHtml=b.documentElement.outerHTML;c=b.createElement("script");c.async=1;c.src="//static.hotjar.com/c/hotjar-7206.js?sv=2";b.getElementsByTagName("head")[0].appendChild(c);}
-      if(b.readyState==="interactive"||b.readyState==="complete"||b.readyState==="loaded"){ls();}else{if(b.addEventListener){b.addEventListener("DOMContentLoaded",ls,false);}}
-      if(!f._hjPlayback && b.addEventListener){
-        g.prototype.open=function(l,j,m,h,k){this._u=j;xo.call(this,l,j,m,h,k)};
-        g.prototype.send=function(e){var j=this;function h(){if(j.readyState===4){f.hj("_xhr",j._u,j.status,j.response)}}this.addEventListener("readystatechange",h,false);xs.call(this,e)};
-      }
-    })(window,document,window.XMLHttpRequest);
-  </script>
+
 </head>
 
 
@@ -340,7 +351,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                 <hr class="hr"/>
 
-                <form class="form-horizontal login-form" id="res-signup-form" method="post" action="">
+                <form class="form-horizontal" id="restaurant-signup-form" method="post" action="">
 
                     <div class="form-group">
 
@@ -360,7 +371,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                     </div>
 
-                    <form class="form-horizontal login-form" method="post" action="">
+                    <form class="form-horizontal" method="post" action="">
 
                         <div class="form-group">
 
@@ -374,7 +385,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                             <div class="col-lg-6">
 
-                                <input id="j_email" class="form-control" type="email" value="" title="Enter your email" placeholder="Enter your email..." name="email"/>
+                                <input id="j_email" class="form-control" type="email" value="" title="Enter your email" placeholder="Enter your email..." name="j_email"/>
 
                             </div>
 
@@ -392,7 +403,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                             <div class="col-lg-6">
 
-                                <input id="j_phone" class="form-control" type="text" value="" title="Enter your Phone" placeholder="Enter your phone no..." name="phoneno"/>
+                                <input id="j_phone" class="form-control" type="text" value="" title="Enter your Phone" placeholder="Enter your phone no..." name="j_phoneno"/>
 
                             </div>
 
@@ -412,7 +423,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                             <div class="col-lg-6">
 
-                                <input id="j_resname" class="form-control" type="text" value="" title="Enter your Password" placeholder="Enter your restaurant name..." name="resName"/>
+                                <input id="j_resname" class="form-control" type="text" value="" title="Enter your Password" placeholder="Enter your restaurant name..." name="j_rest_name"/>
 
                             </div>
 
@@ -430,9 +441,9 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                             <div class="col-lg-6">
 
-                                 <select class="form-control">
+                                 <select class="form-control" name="j_rest_type">
 
-                                    <option value="Please Select">-Please Select-</option>
+                                    <option value="">-Please Select-</option>
 
                                      <option value="American">American</option>
 
@@ -564,7 +575,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                                 <select class="form-control" name="j_rest_delivery">
 
-                                    <option value="Select">-Select-</option>
+                                    <option value="">-Select-</option>
 
                                     <option value="Yes">Yes</option>
 
@@ -588,7 +599,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                             <div class="col-lg-6">
 
-                                <input id="j_city" class="form-control" type="text" value="" title="Enter your City" placeholder="Enter your city..." name="city"/>
+                                <input id="j_city" class="form-control" type="text" value="" title="Enter your City" placeholder="Enter your city..." name="j_city"/>
 
                             </div>
 
@@ -606,7 +617,7 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                             <div class="col-lg-6">
 
-                                <input id="j_postcode" class="form-control" type="text" value="" title="Enter your Postcode" placeholder="Enter your postcode..." name="postcode"/>
+                                <input id="j_postcode" class="form-control" type="text" value="" title="Enter your Postcode" placeholder="Enter your postcode..." name="j_postcode"/>
 
                             </div>
 
@@ -618,7 +629,9 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
 
                             <label class="control-label"></label>
 
-                            <input class="custom_submit_button red_btn2" type="submit" value="Done">
+                            <input type="hidden" name="access" value="<?php echo $_SESSION['access_key'];?>"/>
+
+                            <input class="btn custom-button red_btn2" type="submit" value="Submit">
 
                         </div>
 
@@ -645,10 +658,41 @@ $_SESSION['access_key'] = md5(getRealIpAddr().rand().rand());
             </div>
 
         </div>
+</div>
 
-    </div>
+
+<div class="modal fade" id="restaurant-signup-modal" tabindex="-1" role="dialog" aria-labelledby="signin-modal" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                <h4 class="modal-title"></h4>
+
+            </div>
+
+            <div class="modal-body">
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn" data-dismiss="modal">Try Again</button>
+
+            </div>
+
+        </div><!-- /.modal-content -->
+
+    </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
 
 <?php include('templates/footer2.php');?>
+
 
 </body>
 

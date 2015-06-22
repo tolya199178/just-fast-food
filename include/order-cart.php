@@ -39,7 +39,7 @@
 						} else {
 							//$chareged = round($_SESSION['DELIVERY_CHARGES'] * delivery_charges($_SESSION['DELIVERY_REST_ID']),2);
 							$charges = ' &pound; '.number_format($_SESSION['DELIVERY_CHARGES'], 2);
-							$_SESSION['CART_SUBTOTAL'] = $_SESSION['DELIVERY_CHARGES']+$_SESSION['CART']['TOTAL'];
+							$_SESSION['CART_SUBTOTAL'] = $_SESSION['DELIVERY_CHARGES'] + $_SESSION['CART']['TOTAL'];
 							$_SESSION['SPECIAL_DISCOUNT'] = 0;
 
 							if(isset($_SESSION['SPECIAL_OFFER'])){

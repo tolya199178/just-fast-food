@@ -2,363 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be46a72-43e6-4ac8-bc7d-cb9080110944" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/card/charge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modernizr.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/notificationFx.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.ftpquota" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess.save" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/JFF.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/3fab3f049d642e87e786f614313c3f7b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/5ad1f89f917f9e3c654babb09042e81c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/6079c4cecf58816f1d76520e2fa625a7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/710293f63e1801b98bf364d6688cdad8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/731291a7d580ff8a1ef651d099c8b858" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/cdbdbf3d6aff616178f9bd78a9e771af" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/d9d705061b56d506f59946f0f0f80fcd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.phpintel/index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JFF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/Config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/ISOCountries.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/Loading.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/PaymentForm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/PreProcessPaymentForm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/ProcessPayment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/ThePaymentGateway/Common.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/ThePaymentGateway/PaymentSystem.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/ThePaymentGateway/SOAP.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/ThreeDSecureAuthentication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/ThreeDSecureLandingPage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/error_log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/process.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card_0/refund.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Ajax_Loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/CSS/StyleSheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/ISOCountries.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/AJAXSpinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/Ajax_Loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/ErrorBig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/InformationBig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/Required.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/SuccessBig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/Valid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/ValidationError.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/WarningBig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Images/YellowTiny.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/Loading.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/PaymentForm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/PreProcessPaymentForm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/ProcessPayment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/ThePaymentGateway/Common.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/ThePaymentGateway/PaymentSystem.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/ThePaymentGateway/SOAP.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/ThreeDSecureAuthentication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/ThreeDSecureLandingPage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/p.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/card__/refund.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/complex_usage_example.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/debug_vars.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/eval_terminal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/handle_errors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/handle_javascript_errors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/handle_javascript_errors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/handle_on_redirect.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/highload_optimization.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/old_version_adapter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/features/protect_by_password.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/utils/build_phar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/utils/detect_headers_limit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/examples/utils/test_jump_to_file.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Connector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Dispatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Dispatcher/Debug.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Dispatcher/Errors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Dispatcher/Evaluate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Dumper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/EvalProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/OldVersionAdapter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/PsrLogger.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Storage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Storage/AllKeysList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Storage/ExpiringKeyValue.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Storage/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Storage/Memcache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Storage/MongoDB.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/Storage/Session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/src/PhpConsole/__autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/ClientEmulator/Connector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/ClientEmulator/Request.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/ClientEmulator/Response.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Connector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Dispatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Dispatcher/Debug.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Dispatcher/Errors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Dispatcher/Eval.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Dumper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/EvalProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/PsrLogger.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Remote/Auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Remote/Connector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Remote/Evaluate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Remote/Handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Remote/HandlerAfterConnector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Remote/HandlerBeforeConnector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Remote/Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Storage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Storage/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Storage/Memcache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Storage/MongoDB.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Storage/Session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/Test/Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/dispatch_debug.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/init_default_connector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/init_default_handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/print.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/set_connector_allowed_ip.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/set_connector_auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/set_connector_encoding.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/set_connector_eval_enabled.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/set_connector_ssl_only.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/set_server_encoding.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/trigger_compile_error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/trigger_exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/trigger_fatal_error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/trigger_max_execution_time_error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/trigger_memory_limit_error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/trigger_not_fatal_errors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/scripts/trigger_parse_error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/server.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/tmp/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/php-console-master/tests/vendor/README.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/.gitignore" afterPath="$PROJECT_DIR$/include/braintree-php/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/CHANGELOG.md" afterPath="$PROJECT_DIR$/include/braintree-php/CHANGELOG.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/LICENSE" afterPath="$PROJECT_DIR$/include/braintree-php/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/README.md" afterPath="$PROJECT_DIR$/include/braintree-php/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/Rakefile" afterPath="$PROJECT_DIR$/include/braintree-php/Rakefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/ci.sh" afterPath="$PROJECT_DIR$/include/braintree-php/ci.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/composer.json" afterPath="$PROJECT_DIR$/include/braintree-php/composer.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/AddOn.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/AddOn.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/AddOnGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/AddOnGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Address.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Address.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/AddressGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/AddressGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/ApplePayCard.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/ApplePayCard.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/ClientToken.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/ClientToken.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/ClientTokenGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/ClientTokenGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Collection.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Collection.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Configuration.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Configuration.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/CreditCard.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/CreditCard.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/CreditCardGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/CreditCardGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/CreditCardVerification.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/CreditCardVerification.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/CreditCardVerificationGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/CreditCardVerificationGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/CreditCardVerificationSearch.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/CreditCardVerificationSearch.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Customer.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Customer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/CustomerGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/CustomerGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/CustomerSearch.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/CustomerSearch.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Descriptor.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Descriptor.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Digest.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Digest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Disbursement.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Disbursement.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/DisbursementDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/DisbursementDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Discount.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Discount.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/DiscountGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/DiscountGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Dispute.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Dispute.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Dispute/TransactionDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Dispute/TransactionDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/EqualityNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/EqualityNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Error/Codes.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Error/Codes.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Error/ErrorCollection.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Error/ErrorCollection.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Error/Validation.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Error/Validation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Error/ValidationErrorCollection.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Error/ValidationErrorCollection.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/Authentication.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/Authentication.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/Authorization.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/Authorization.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/Configuration.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/Configuration.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/DownForMaintenance.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/DownForMaintenance.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/ForgedQueryString.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/ForgedQueryString.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/InvalidSignature.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/InvalidSignature.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/NotFound.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/NotFound.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/SSLCaFileNotFound.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/SSLCaFileNotFound.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/SSLCertificate.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/SSLCertificate.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/ServerError.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/ServerError.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/Unexpected.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/Unexpected.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/UpgradeRequired.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/UpgradeRequired.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Exception/ValidationsFailed.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Exception/ValidationsFailed.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Gateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Gateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Http.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Http.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Instance.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Instance.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/IsNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/IsNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/KeyValueNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/KeyValueNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MerchantAccount.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MerchantAccount.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MerchantAccount/AddressDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MerchantAccount/AddressDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MerchantAccount/BusinessDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MerchantAccount/BusinessDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MerchantAccount/FundingDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MerchantAccount/FundingDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MerchantAccount/IndividualDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MerchantAccount/IndividualDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MerchantAccountGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MerchantAccountGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Modification.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Modification.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MultipleValueNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MultipleValueNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/MultipleValueOrTextNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/MultipleValueOrTextNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PartialMatchNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PartialMatchNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PartnerMerchant.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PartnerMerchant.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PayPalAccount.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PayPalAccount.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PayPalAccountGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PayPalAccountGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PaymentInstrumentType.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PaymentInstrumentType.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PaymentMethod.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PaymentMethod.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PaymentMethodGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PaymentMethodGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Plan.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Plan.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/PlanGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/PlanGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/RangeNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/RangeNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/ResourceCollection.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/ResourceCollection.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Result/CreditCardVerification.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Result/CreditCardVerification.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Result/Error.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Result/Error.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Result/Successful.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Result/Successful.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/RiskData.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/RiskData.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/SettlementBatchSummary.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/SettlementBatchSummary.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/SettlementBatchSummaryGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/SettlementBatchSummaryGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/SignatureService.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/SignatureService.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Subscription.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Subscription.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Subscription/StatusDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Subscription/StatusDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/SubscriptionGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/SubscriptionGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/SubscriptionSearch.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/SubscriptionSearch.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Test/CreditCardNumbers.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Test/CreditCardNumbers.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Test/MerchantAccount.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Test/MerchantAccount.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Test/Nonces.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Test/Nonces.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Test/TransactionAmounts.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Test/TransactionAmounts.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Test/VenmoSdk.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Test/VenmoSdk.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/TextNode.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/TextNode.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction/AddressDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction/AddressDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction/ApplePayCardDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction/ApplePayCardDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction/CreditCardDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction/CreditCardDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction/CustomerDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction/CustomerDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction/PayPalDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction/PayPalDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction/StatusDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction/StatusDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Transaction/SubscriptionDetails.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Transaction/SubscriptionDetails.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/TransactionGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/TransactionGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/TransactionSearch.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/TransactionSearch.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/TransparentRedirect.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/TransparentRedirect.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/TransparentRedirectGateway.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/TransparentRedirectGateway.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/UnknownPaymentMethod.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/UnknownPaymentMethod.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Util.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Util.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Version.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Version.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/WebhookNotification.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/WebhookNotification.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/WebhookTesting.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/WebhookTesting.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Xml.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Xml.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Xml/Generator.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Xml/Generator.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/Braintree/Xml/Parser.php" afterPath="$PROJECT_DIR$/include/braintree-php/lib/Braintree/Xml/Parser.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/lib/ssl/api_braintreegateway_com.ca.crt" afterPath="$PROJECT_DIR$/include/braintree-php/lib/ssl/api_braintreegateway_com.ca.crt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/phpunit.xml.dist" afterPath="$PROJECT_DIR$/include/braintree-php/phpunit.xml.dist" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/Braintree/CreditCardDefaults.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/Braintree/CreditCardDefaults.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/Braintree/CreditCardNumbers/CardTypeIndicators.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/Braintree/CreditCardNumbers/CardTypeIndicators.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/TestHelper.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/TestHelper.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/AddOnsTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/AddOnsTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/AddressTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/AddressTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/ClientTokenTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/ClientTokenTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/CreditCardTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/CreditCardTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/CreditCardVerificationAdvancedSearchTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/CreditCardVerificationAdvancedSearchTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/CustomerAdvancedSearchTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/CustomerAdvancedSearchTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/CustomerTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/CustomerTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/DisbursementTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/DisbursementTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/DiscountTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/DiscountTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/Error/ErrorCollectionTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/Error/ErrorCollectionTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/Error/ValidationErrorCollectionTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/Error/ValidationErrorCollectionTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/HttpClientApi.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/HttpClientApi.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/HttpTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/HttpTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/MerchantAccountTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/MerchantAccountTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/MultipleValueNodeTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/MultipleValueNodeTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/PayPalAccountTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/PayPalAccountTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/PaymentMethodTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/PaymentMethodTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/PlanTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/PlanTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/Result/ErrorTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/Result/ErrorTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/SettlementBatchSummaryTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/SettlementBatchSummaryTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/SubscriptionSearchTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/SubscriptionSearchTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/SubscriptionTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/SubscriptionTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/SubscriptionTestHelper.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/SubscriptionTestHelper.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/TextNodeTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/TextNodeTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/TransactionAdvancedSearchTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/TransactionAdvancedSearchTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/TransactionTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/TransactionTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/integration/TransparentRedirectTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/integration/TransparentRedirectTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/AddOnTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/AddOnTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/AddressTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/AddressTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/BraintreeTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/BraintreeTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/ClientApi/ClientTokenTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/ClientApi/ClientTokenTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/ConfigurationTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/ConfigurationTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/CreditCardTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/CreditCardTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/CustomerTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/CustomerTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/DigestTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/DigestTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/DisbursementDetailsTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/DisbursementDetailsTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/DisbursementTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/DisbursementTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/DiscountTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/DiscountTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/GatewayTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/GatewayTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/InstanceTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/InstanceTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/MerchantAccountTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/MerchantAccountTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/MultipleValueNodeTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/MultipleValueNodeTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/MultipleValueOrTextNodeTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/MultipleValueOrTextNodeTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/PayPalAccountTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/PayPalAccountTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/PaymentMethodTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/PaymentMethodTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/RangeNodeTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/RangeNodeTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/ResourceCollectionTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/ResourceCollectionTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/Result/ErrorTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/Result/ErrorTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/Result/SuccessfulTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/Result/SuccessfulTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/SanityTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/SanityTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/SubscriptionSearchTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/SubscriptionSearchTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/SubscriptionTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/SubscriptionTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/TextNodeTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/TextNodeTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/TransactionTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/TransactionTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/TransparentRedirectTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/TransparentRedirectTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/UnknownPaymentMethodTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/UnknownPaymentMethodTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/UtilTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/UtilTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/WebhookNotificationTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/WebhookNotificationTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/Xml_GeneratorTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/Xml_GeneratorTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card/include/braintree-php/tests/unit/Xml_ParserTest.php" afterPath="$PROJECT_DIR$/include/braintree-php/tests/unit/Xml_ParserTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/card__/error_log" afterPath="$PROJECT_DIR$/js/braintree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/archivist.css" afterPath="$PROJECT_DIR$/css/archivist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dashboard.php" afterPath="$PROJECT_DIR$/admin/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/includes/file.php" afterPath="$PROJECT_DIR$/blog/wp-admin/includes/file.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp/wp-admin/includes/file.php" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/file.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.php" afterPath="$PROJECT_DIR$/templates/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer2.php" afterPath="$PROJECT_DIR$/templates/footer2.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/footer.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header2.php" afterPath="$PROJECT_DIR$/templates/header2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/items.php" afterPath="$PROJECT_DIR$/admin/items.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/location.php" afterPath="$PROJECT_DIR$/admin/location.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/includes/misc.php" afterPath="$PROJECT_DIR$/blog/wp-admin/includes/misc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp/wp-admin/includes/misc.php" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/misc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/network.php" afterPath="$PROJECT_DIR$/blog/wp-admin/network.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp/wp-admin/network.php" afterPath="$PROJECT_DIR$/wp/wp-admin/network.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/options-permalink.php" afterPath="$PROJECT_DIR$/blog/wp-admin/options-permalink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp/wp-admin/options-permalink.php" afterPath="$PROJECT_DIR$/wp/wp-admin/options-permalink.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/order-details.php" afterPath="$PROJECT_DIR$/order-details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay.php" afterPath="$PROJECT_DIR$/pay.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/card/process.php" afterPath="$PROJECT_DIR$/include/card/process.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/sms/reply.php" afterPath="$PROJECT_DIR$/include/sms/reply.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant.php" afterPath="$PROJECT_DIR$/restaurant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/rewrite.php" afterPath="$PROJECT_DIR$/blog/wp-includes/rewrite.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp/wp-includes/rewrite.php" afterPath="$PROJECT_DIR$/wp/wp-includes/rewrite.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_result.php" afterPath="$PROJECT_DIR$/search_result.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/justfastfood" afterPath="$PROJECT_DIR$/justfastfood" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer2.php" afterPath="$PROJECT_DIR$/templates/footer2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/welcomeMsg.php" afterPath="$PROJECT_DIR$/templates/welcomeMsg.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.php" afterPath="$PROJECT_DIR$/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/subitem.php" afterPath="$PROJECT_DIR$/admin/subitem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_result.php" afterPath="$PROJECT_DIR$/search_result.php" />
     </list>
     <ignored path="JFF.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -382,54 +35,14 @@
     <favorites_list name="JFF" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48212728">
+    <splitter split-orientation="horizontal" split-proportion="0.50144094">
       <split-first>
         <leaf>
-          <file leaf-file-name="dbclass.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/include/dbclass.php">
+          <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/menu.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6674473" vertical-offset="375" max-vertical-offset="5325">
-                  <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="restaurant.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/restaurant.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="11730">
-                  <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="search_result.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/search_result.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.166667" vertical-offset="1367" max-vertical-offset="6090">
-                  <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
-                  <folding>
-                    <marker date="1430235570000" expanded="true" signature="457:895" placeholder="..." />
-                    <marker date="1430235570000" expanded="true" signature="525:895" placeholder="..." />
-                    <marker date="1430235570000" expanded="true" signature="721:895" placeholder="{...}" />
-                    <marker date="1430235570000" expanded="true" signature="791:895" placeholder="..." />
-                    <marker date="1430235570000" expanded="true" signature="19772:20099" placeholder="{...}" />
-                    <marker date="1430235570000" expanded="true" signature="20105:20789" placeholder="{...}" />
-                    <marker date="1430235570000" expanded="true" signature="20227:20675" placeholder="{...}" />
-                    <marker date="1430235570000" expanded="true" signature="20441:20528" placeholder="{...}" />
-                    <marker date="1430235570000" expanded="true" signature="20681:20766" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="outer-cart2.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/outer-cart2.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2310">
-                  <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="1743" max-vertical-offset="26523">
+                  <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
                   <folding />
                 </state>
               </provider>
@@ -438,38 +51,53 @@
           <file leaf-file-name="header2.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/header2.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="4125" max-vertical-offset="9690">
-                  <caret line="278" column="6" selection-start-line="278" selection-start-column="6" selection-end-line="278" selection-end-column="6" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0" vertical-offset="3948" max-vertical-offset="13650">
+                  <caret line="200" column="23" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
+                  <folding>
+                    <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#iframe#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
+          <file leaf-file-name="restaurant-owner.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/restaurant-owner.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="3390">
-                  <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0" vertical-offset="8464" max-vertical-offset="14784">
+                  <caret line="573" column="50" selection-start-line="573" selection-start-column="50" selection-end-line="573" selection-end-column="50" />
+                  <folding>
+                    <marker date="1434387006000" expanded="true" signature="3185:3199" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="my-profile.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/my-profile.php">
+          <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/custom.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="5393" max-vertical-offset="15720">
-                  <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="15035" max-vertical-offset="20202">
+                  <caret line="742" column="51" selection-start-line="742" selection-start-column="51" selection-end-line="742" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="reply.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="menu-type.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/menu-type.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="10479">
+                  <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="reply.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/sms/reply.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1200">
-                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1260">
+                  <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -478,8 +106,40 @@
           <file leaf-file-name="send.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/sms/send.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="3255">
-                  <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="162" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="3297" max-vertical-offset="4557">
+                  <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pay.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pay.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="9702" max-vertical-offset="14595">
+                  <caret line="462" column="8" selection-start-line="462" selection-start-column="8" selection-end-line="462" selection-end-column="8" />
+                  <folding>
+                    <marker date="1434492249000" expanded="true" signature="3398:3412" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NexmoAccount.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/sms/Services/Nexmo/NexmoAccount.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="4511" max-vertical-offset="4977">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NexmoMessage.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/sms/Services/Nexmo/NexmoMessage.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="8988">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -489,103 +149,14 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/signup.php">
+          <file leaf-file-name="corporate-user.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/corporate-user.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="6.875" vertical-offset="1140" max-vertical-offset="3870">
-                  <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.75" vertical-offset="2625" max-vertical-offset="4275">
-                  <caret line="205" column="8" selection-start-line="205" selection-start-column="8" selection-end-line="205" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="11299" max-vertical-offset="19236">
+                  <caret line="542" column="80" selection-start-line="542" selection-start-column="67" selection-end-line="542" selection-end-column="80" />
                   <folding>
-                    <marker date="1427753933000" expanded="true" signature="368:646" placeholder="..." />
-                    <marker date="1427753933000" expanded="true" signature="375:646" placeholder="..." />
-                    <marker date="1427753933000" expanded="true" signature="10373:10623" placeholder="SELECT `user..." />
-                    <marker date="1427753933000" expanded="true" signature="11084:11098" placeholder="..." />
+                    <marker date="1434318477000" expanded="true" signature="4360:4374" placeholder="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.htaccess">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.1640798" vertical-offset="0" max-vertical-offset="615">
-                  <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="staff.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/staff.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="7980">
-                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="staff-profile.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/staff-profile.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="5775">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding>
-                    <marker date="1427744948000" expanded="true" signature="60:112" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="order-details.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/order-details.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="2955" max-vertical-offset="8745">
-                  <caret line="209" column="60" selection-start-line="209" selection-start-column="60" selection-end-line="209" selection-end-column="60" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="email-send.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/email-send.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="10560">
-                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="order-complete.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/order-complete.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="5273" max-vertical-offset="7320">
-                  <caret line="368" column="78" selection-start-line="368" selection-start-column="78" selection-end-line="368" selection-end-column="78" />
-                  <folding>
-                    <marker date="1427744948000" expanded="true" signature="3363:4130" placeholder="{...}" />
-                    <marker date="1427744948000" expanded="true" signature="3407:3880" placeholder="{...}" />
-                    <marker date="1427744948000" expanded="true" signature="3886:4027" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="cash-payment.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/cash-payment.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="795">
-                  <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -605,39 +176,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pay.php" />
         <option value="$PROJECT_DIR$/admin/orders.php" />
-        <option value="$PROJECT_DIR$/include/card/process.php" />
         <option value="$PROJECT_DIR$/alpha/order-complete.php" />
         <option value="$PROJECT_DIR$/alpha/include/outer-cart.php" />
-        <option value="$PROJECT_DIR$/menu.php" />
         <option value="$PROJECT_DIR$/terms.php" />
-        <option value="$PROJECT_DIR$/css/archivist.css" />
         <option value="$PROJECT_DIR$/js/jquery-1.10.0.min.js" />
         <option value="$PROJECT_DIR$/include/cash-payment.php" />
         <option value="$PROJECT_DIR$/00CC10D630002FC2C082D84F1EA5D750.txt" />
-        <option value="$PROJECT_DIR$/my-profile.php" />
-        <option value="$PROJECT_DIR$/templates/welcomeMsg.php" />
-        <option value="$PROJECT_DIR$/include/functions.php" />
-        <option value="$PROJECT_DIR$/templates/footer2.php" />
         <option value="$PROJECT_DIR$/include/order-check.php" />
-        <option value="$PROJECT_DIR$/include/order-movement.php" />
-        <option value="$PROJECT_DIR$/signup.php" />
         <option value="$PROJECT_DIR$/what-we-do.php" />
-        <option value="$PROJECT_DIR$/order-complete.php" />
-        <option value="$PROJECT_DIR$/include/email-send.php" />
-        <option value="$PROJECT_DIR$/order-details.php" />
-        <option value="$PROJECT_DIR$/include/outer-cart2.php" />
-        <option value="$PROJECT_DIR$/templates/header2.php" />
-        <option value="$PROJECT_DIR$/include/sms/reply.php" />
-        <option value="$PROJECT_DIR$/include/sms/error_log" />
-        <option value="$PROJECT_DIR$/staff-profile.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/admin/staff.php" />
-        <option value="$PROJECT_DIR$/admin/dashboard.php" />
-        <option value="$PROJECT_DIR$/search_result.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/menu.php" />
+        <option value="$PROJECT_DIR$/templates/welcomeMsg.php" />
+        <option value="$PROJECT_DIR$/staff-profile.php" />
+        <option value="$PROJECT_DIR$/search_result.html" />
+        <option value="$PROJECT_DIR$/include/card/process.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/order-details.php" />
+        <option value="$PROJECT_DIR$/include/outer-cart.php" />
+        <option value="$PROJECT_DIR$/include/order-cart.php" />
+        <option value="$PROJECT_DIR$/order-complete.php" />
+        <option value="$PROJECT_DIR$/include/card/charge.php" />
+        <option value="$PROJECT_DIR$/include/outer-cart2.php" />
+        <option value="$PROJECT_DIR$/include/paypal/process.php" />
+        <option value="$PROJECT_DIR$/include/order-cart2.php" />
+        <option value="$PROJECT_DIR$/signup.php" />
+        <option value="$PROJECT_DIR$/include/functions.php" />
+        <option value="$PROJECT_DIR$/search_result.php" />
+        <option value="$PROJECT_DIR$/admin/dashboard.php" />
+        <option value="$PROJECT_DIR$/include/email-send.php" />
+        <option value="$PROJECT_DIR$/admin/staff.php" />
+        <option value="$PROJECT_DIR$/admin/categories.php" />
+        <option value="$PROJECT_DIR$/css/archivist.css" />
+        <option value="$PROJECT_DIR$/menu2.php" />
+        <option value="$PROJECT_DIR$/admin/menu-type.php" />
+        <option value="$PROJECT_DIR$/include/sms/error_log" />
+        <option value="$PROJECT_DIR$/include/order-movement.php" />
+        <option value="$PROJECT_DIR$/admin/error_log" />
         <option value="$PROJECT_DIR$/include/dbclass.php" />
+        <option value="$PROJECT_DIR$/templates/header2.php" />
+        <option value="$PROJECT_DIR$/templates/footer2.php" />
+        <option value="$PROJECT_DIR$/templates/error_log" />
+        <option value="$PROJECT_DIR$/corporate-user.php" />
+        <option value="$PROJECT_DIR$/my-profile.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/restaurant-owner.php" />
+        <option value="$PROJECT_DIR$/js/custom.js" />
+        <option value="$PROJECT_DIR$/error_log" />
+        <option value="$PROJECT_DIR$/include/sms/send.php" />
+        <option value="$PROJECT_DIR$/pay.php" />
+        <option value="$PROJECT_DIR$/include/sms/reply.php" />
       </list>
     </option>
   </component>
@@ -646,9 +234,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="11" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="width" value="1422" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -677,13 +266,13 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JFF" />
+              <option name="myItemId" value="justfastfood" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JFF" />
+              <option name="myItemId" value="justfastfood" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -693,7 +282,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JFF" />
+              <option name="myItemId" value="justfastfood" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -705,6 +294,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="justfastfood" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="justfastfood" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="justfastfood" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="justfastfood" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -712,19 +341,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.project.vagrant" />
+    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/JFF/justfastfood/admin/error_log&#10;sendmail&#9;null&#9;null&#10;err&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/JFF/justfastfood/error_log&#10;func&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/JFF/justfastfood/include/functions.php&#10;live tem&#9;ACTION&#9;InsertLiveTemplate&#10;live temp&#9;ACTION&#9;ExpandLiveTemplateCustom&#10;getStaff&#9;null&#9;null" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/images/background" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css/NotificationStyles/js" />
       <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/include" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/include/card/include" />
@@ -733,6 +364,10 @@
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -772,31 +407,73 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="11" y="23" width="1422" height="822" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32786885" sideWeight="0.49964055" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32689834" sideWeight="0.49964055" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18454936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14782609" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3117409" sideWeight="0.5003595" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2701228" sideWeight="0.44690266" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31874144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31660232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26732674" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.269863" sideWeight="0.55309737" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31917807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49964055" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26575342" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3117409" sideWeight="0.5003595" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12088698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -819,7 +496,9 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -835,393 +514,409 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/order-complete.php">
+    <entry file="file://$PROJECT_DIR$/corporate-user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3090" max-vertical-offset="7320">
-          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19236">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1427744948000" expanded="true" signature="3363:4130" placeholder="{...}" />
-            <marker date="1427744948000" expanded="true" signature="3407:3880" placeholder="{...}" />
-            <marker date="1427744948000" expanded="true" signature="3886:4027" placeholder="{...}" />
+            <marker date="1434318477000" expanded="true" signature="4360:4374" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error_log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10005">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/card/process.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1495" max-vertical-offset="3900">
-          <caret line="79" column="83" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/searchPostcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.53317535" vertical-offset="225" max-vertical-offset="1185">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3292683" vertical-offset="3660" max-vertical-offset="4500">
-          <caret line="253" column="14" selection-start-line="253" selection-start-column="14" selection-end-line="253" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error_log">
-      <provider editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4857143" vertical-offset="229230" max-vertical-offset="229755">
-          <caret line="15299" column="122" selection-start-line="15299" selection-start-column="122" selection-end-line="15299" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/include/sms/reply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/order-complete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="2850" max-vertical-offset="3885">
-          <caret line="205" column="47" selection-start-line="205" selection-start-column="47" selection-end-line="205" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/include/notification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/include/outer-cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.125" vertical-offset="384" max-vertical-offset="885">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-details2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9019607" vertical-offset="6758" max-vertical-offset="8535">
-          <caret line="457" column="81" selection-start-line="457" selection-start-column="81" selection-end-line="457" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6818" max-vertical-offset="9885">
-          <caret line="464" column="47" selection-start-line="464" selection-start-column="37" selection-end-line="464" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15000" max-vertical-offset="18945">
-          <caret line="1017" column="9" selection-start-line="1017" selection-start-column="9" selection-end-line="1017" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="2085">
-          <caret line="101" column="361" selection-start-line="101" selection-start-column="361" selection-end-line="101" selection-end-column="361" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/NotificationStyles/js/notificationFx.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="434">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-f52b5b67-a0adb6db-6c307a54-ae83b36a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="447">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/welcomeMsg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1830">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/archivist.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11286" max-vertical-offset="29700">
-          <caret line="774" column="35" selection-start-line="774" selection-start-column="35" selection-end-line="774" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="17655">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="26523">
+          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="277" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/include/order-movement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3536586" vertical-offset="1350" max-vertical-offset="3135">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/order-check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="720">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/order-movement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="855" max-vertical-offset="3870">
-          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2565">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/what-we-do.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5487805" vertical-offset="300" max-vertical-offset="6090">
-          <caret line="35" column="0" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/cash-payment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="780">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/email-send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="10560">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2955" max-vertical-offset="8745">
-          <caret line="209" column="60" selection-start-line="209" selection-start-column="60" selection-end-line="209" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beta/include/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11002445" vertical-offset="0" max-vertical-offset="6840">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/orders.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10744" max-vertical-offset="12555">
-          <caret line="734" column="33" selection-start-line="734" selection-start-column="33" selection-end-line="734" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="11730">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/outer-cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/outer-cart2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2310">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/sms/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="3255">
-          <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="162" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.875" vertical-offset="1140" max-vertical-offset="3870">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-complete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5273" max-vertical-offset="7320">
-          <caret line="368" column="78" selection-start-line="368" selection-start-column="78" selection-end-line="368" selection-end-column="78" />
-          <folding>
-            <marker date="1427744948000" expanded="true" signature="3363:4130" placeholder="{...}" />
-            <marker date="1427744948000" expanded="true" signature="3407:3880" placeholder="{...}" />
-            <marker date="1427744948000" expanded="true" signature="3886:4027" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/sms/reply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1200">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff-profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="5775">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1427744948000" expanded="true" signature="60:112" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/sms/error_log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5704846" vertical-offset="401" max-vertical-offset="855">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/header2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4125" max-vertical-offset="9690">
-          <caret line="278" column="6" selection-start-line="278" selection-start-column="6" selection-end-line="278" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/staff.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="7980">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5393" max-vertical-offset="15720">
-          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="3390">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13608">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75" vertical-offset="2625" max-vertical-offset="4275">
-          <caret line="205" column="8" selection-start-line="205" selection-start-column="8" selection-end-line="205" selection-end-column="8" />
           <folding>
-            <marker date="1427753933000" expanded="true" signature="368:646" placeholder="..." />
-            <marker date="1427753933000" expanded="true" signature="375:646" placeholder="..." />
-            <marker date="1427753933000" expanded="true" signature="10373:10623" placeholder="SELECT `user..." />
-            <marker date="1427753933000" expanded="true" signature="11084:11098" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search_result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.166667" vertical-offset="1367" max-vertical-offset="6090">
-          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
-          <folding>
-            <marker date="1430235570000" expanded="true" signature="457:895" placeholder="..." />
-            <marker date="1430235570000" expanded="true" signature="525:895" placeholder="..." />
-            <marker date="1430235570000" expanded="true" signature="721:895" placeholder="{...}" />
-            <marker date="1430235570000" expanded="true" signature="791:895" placeholder="..." />
-            <marker date="1430235570000" expanded="true" signature="19772:20099" placeholder="{...}" />
-            <marker date="1430235570000" expanded="true" signature="20105:20789" placeholder="{...}" />
-            <marker date="1430235570000" expanded="true" signature="20227:20675" placeholder="{...}" />
-            <marker date="1430235570000" expanded="true" signature="20441:20528" placeholder="{...}" />
-            <marker date="1430235570000" expanded="true" signature="20681:20766" placeholder="{...}" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/dbclass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6674473" vertical-offset="375" max-vertical-offset="5325">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="7455">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="26523">
+          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="277" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/templates/header2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1640798" vertical-offset="0" max-vertical-offset="615">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13608">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/dbclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="7455">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="26523">
+          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="277" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13608">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/dbclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="7455">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="26523">
+          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="277" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13608">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/dbclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="7455">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="26523">
+          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="277" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13608">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/dbclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="7455">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26523">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/justfastfood/pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6756757" vertical-offset="3480" max-vertical-offset="9885">
+          <caret line="262" column="33" selection-start-line="473" selection-start-column="85" selection-end-line="473" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/welcomeMsg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="255" max-vertical-offset="1455">
+          <caret line="37" column="129" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3048499" vertical-offset="6783" max-vertical-offset="8805">
+          <caret line="461" column="30" selection-start-line="461" selection-start-column="30" selection-end-line="461" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2121" max-vertical-offset="5376">
+          <caret line="220" column="33" selection-start-line="220" selection-start-column="33" selection-end-line="220" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2156863" vertical-offset="6595" max-vertical-offset="8610">
+          <caret line="317" column="0" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34978542" vertical-offset="34340" max-vertical-offset="67788">
+          <caret line="1646" column="9" selection-start-line="1646" selection-start-column="9" selection-end-line="1646" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/justfastfood/blog/wp-includes/class-phpmailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34978542" vertical-offset="13781" max-vertical-offset="52857">
+          <caret line="685" column="21" selection-start-line="685" selection-start-column="21" selection-end-line="685" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/dbclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.25" vertical-offset="147" max-vertical-offset="7455">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3948" max-vertical-offset="13650">
+          <caret line="200" column="23" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1848">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/error_log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.confirm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33265308" vertical-offset="593" max-vertical-offset="2226">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/justfastfood/js/jquery.confirm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33265308" vertical-offset="593" max-vertical-offset="2226">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4055794" vertical-offset="1428" max-vertical-offset="4074">
+          <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.523918" vertical-offset="4810" max-vertical-offset="6300">
+          <caret line="240" column="74" selection-start-line="240" selection-start-column="42" selection-end-line="240" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/js/ui.core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33265308" vertical-offset="341" max-vertical-offset="6069">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67596567" vertical-offset="8022" max-vertical-offset="24717">
+          <caret line="397" column="34" selection-start-line="397" selection-start-column="27" selection-end-line="397" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1716738" vertical-offset="630" max-vertical-offset="22008">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09012876" vertical-offset="0" max-vertical-offset="6069">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1743" max-vertical-offset="26523">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11298">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22532189" vertical-offset="0" max-vertical-offset="5523">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/error_log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-68.38571" vertical-offset="33656" max-vertical-offset="34146">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error_log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6142857" vertical-offset="11102" max-vertical-offset="11634">
+          <caret line="543" column="43" selection-start-line="543" selection-start-column="43" selection-end-line="543" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/menu-type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="10479">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15035" max-vertical-offset="20202">
+          <caret line="742" column="51" selection-start-line="742" selection-start-column="51" selection-end-line="742" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant-owner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8464" max-vertical-offset="14784">
+          <caret line="573" column="50" selection-start-line="573" selection-start-column="50" selection-end-line="573" selection-end-column="50" />
+          <folding>
+            <marker date="1434387006000" expanded="true" signature="3185:3199" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/sms/Services/Nexmo/NexmoAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4511" max-vertical-offset="4977">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/sms/Services/Nexmo/NexmoMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="8988">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/sms/send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3297" max-vertical-offset="4557">
+          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9702" max-vertical-offset="14595">
+          <caret line="462" column="8" selection-start-line="462" selection-start-column="8" selection-end-line="462" selection-end-column="8" />
+          <folding>
+            <marker date="1434492249000" expanded="true" signature="3398:3412" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/sms/reply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1260">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corporate-user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11299" max-vertical-offset="19236">
+          <caret line="542" column="80" selection-start-line="542" selection-start-column="67" selection-end-line="542" selection-end-column="80" />
+          <folding>
+            <marker date="1434318477000" expanded="true" signature="4360:4374" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

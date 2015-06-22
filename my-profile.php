@@ -100,7 +100,7 @@
 
 			  $value .= "'".$r_details."', ";
 
-			  $value .= "'".mysql_real_escape_string(strip_tags($_POST['r_message']))."', ";
+			  $value .= "'".mysqli_real_escape_string($obj->con, strip_tags($_POST['r_message']))."', ";
 
 			  $value .= "NULL";
 

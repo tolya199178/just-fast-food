@@ -6,7 +6,6 @@ include_once('functions.php');
 
 function SENDMAIL($GET ,$CC) {
 	global $obj;
-
 	switch($GET['type']) {
 		case 'verify-acct':
 			$MSG = '<strong>Thank you for your interest in Just-FastFood.com. Your Account has been created </strong><br/><br/>';
@@ -16,6 +15,7 @@ function SENDMAIL($GET ,$CC) {
 
 			$MSG_SUBJ = "Verify Your Account";
 		break;
+
 
 		case 'new-user-reg-live':
 			$MSG = '<strong>Thanks for visiting Just-FastFood.com. You will be notify when we go live!</strong><br/><br/>';
@@ -133,7 +133,7 @@ function SENDMAIL($GET ,$CC) {
 		case 'refund_email':
 
 			$MSG = '<strong>Please find Refund Status Details Below:</strong><br/>';
-			$MSG .= 'ERROR : '.$GET['details']['eror'].'<br><br>';
+			$MSG .= 'ERROR : '.$GET['details']['error'].'<br><br>';
 			foreach($GET['details']['return'] as $name => $detail) {
 				$MSG .= $name . ' : '. urldecode($detail).'<br/>';
 			}
@@ -186,7 +186,7 @@ function SENDMAIL($GET ,$CC) {
             $MSG .= (is_user_corporate($_SESSION['userId']) == 'true' ? ". Company Order ." : "");
 			$MSG .= 'Address : <strong>'.$GET['order_address'].'</strong><br/>';
 			$MSG .= 'Order Note : <strong style="color:#D62725">'.$GET['order_note'].'</strong><br/>';
-			$MSG .= 'Phone No : <strong>'. $GET['user_phoneno'] .'</strong><br/>';
+			$MSG .= 'Phone No : <strong>'. $GET['order_phoneno'].'</strong><br/>';
             $MSG .= 'Transaction ID : <strong>'.$GET['order_transaction_id'].'</strong><br/>';
             $MSG .= 'Payment Type: <strong>'.$GET['order_payment_type'].'</strong><br/>';
             $MSG .= 'Order Arrival Time: <strong>'.$GET['order_arrival_time'].'</strong><br/><br/>';
@@ -216,11 +216,11 @@ function SENDMAIL($GET ,$CC) {
 
 			$Array = json_decode($GET['order_details'] ,true);
 			$MSG_SUBJ = "Thanks for your order!";
-
-			$value1 = $obj->query_db("SELECT `type_name`,`type_phoneno` FROM `menu_type` WHERE `type_id` = '" . $GET['order_rest_id'] . "'");
+			$value1 = $obj->query_db("SELECT `type_name`,`type_phoneno`,`type_time` FROM `menu_type` WHERE `type_id` = '" . $GET['order_rest_id'] . "'");
 			$restaurant = $obj->fetch_db_assoc($value1);
+            $orderTime = date('l jS Y h:i A', strtotime($GET['order_acceptence_time']) + $restaurant['type_time']*60);
 
-			$MSG = '
+            $MSG = '
 					<!DOCTYPE HTML>
 					<html lang="en-US">
 					<head>
@@ -463,7 +463,7 @@ function SENDMAIL($GET ,$CC) {
 																																		</tr>
 																																		<tr>
 																																			<td style="LINE-HEIGHT:22px" valign="bottom" colspan="5">
-																																				<br>Order arrival time: '.$GET['order_arrival_time'].';
+																																				<br>Order arrival time: '.$orderTime.'
 																																				<br>Please note that changes in delivery time can occur.
 																																				<br>
 																																			</td>

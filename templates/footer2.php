@@ -8,7 +8,14 @@
  */
 ?>
 
-
+<style>
+    .f_list ul li a {
+        background: none;
+        position: inherit;
+        color: rgb(249, 75, 33);
+        padding: 5px;
+    }
+</style>
 
 <div class="footer">
   <div class="container">
@@ -26,7 +33,7 @@
               <ul>
                 <li><a href="http://www.facebook.com/JustFastFoods"><i class="fa fa-facebook-square fa-2x"></i></a></li>
                 <li><a href="http://www.twitter.com/JustFastFood"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/b/115653630842872062495/115653630842872062495/posts"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
               </ul>
             </div>
           </li>
@@ -39,11 +46,11 @@
       <div class="f_title"><h3 class="white" style="text-transform: none">Area Covered</h3></div>
       <div class="f_list">
         <ul>
-          <li>London</li>
+          <li>London<span><a href="../driver-apply.php" class="button btnClass" id="hiring" style="font-size: smaller">We're hiring!</a></span></li>
           <li>Birmingham</li>
-          <li>Manchester</li>
-          <li>Leicester</li>
+          <li>Manchester<span><a href="../driver-apply.php" class="button btnClass" id="hiring" style="font-size: smaller">We're hiring!</a></span></li>
           <li>Portsmouth</li>
+          <li>Leicester</li>
 
         </ul>
       </div>
@@ -68,20 +75,21 @@
     </div>
   </div>
 </div>
+
 <script src="js/jquery.newsTicker.js"></script>
 <script src="js/bootstrapValidator.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js?v1.1.6"></script>
+<script src="js/custom.js?v1.2.2"></script>
 <script src="js/responsivemobilemenu.js"></script>
 <script src="js/iCheck.min.js"></script>
 <script src="js/twitterFetcher.min.js"></script>
 <script src="//platform.twitter.com/widgets.js"></script>
 <script src="js/tweetie.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
-
 <script src="js/notificationFx.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 
 <script>
   $(document).ready(function() {
@@ -123,7 +131,18 @@
 <script src="js/script.js?v1.0.6"></script>
 <!--Begin Clicky Web Analytics Tracking Code -->
 
-
+<script type="text/javascript">
+    var clicky_site_ids = clicky_site_ids || [];
+    clicky_site_ids.push(100842669);
+    (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//static.getclicky.com/js';
+        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+    })();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100842669ns.gif" /></p></noscript>
 
 <!-- begin SnapEngage code -->
 <script type="text/javascript">
@@ -143,6 +162,16 @@
 </script>
 <!-- end SnapEngage code -->
 
+<!-- Google Tag Manager -->
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-56LK6X"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-56LK6X');</script>
+<!-- End Google Tag Manager -->
 
 
 <!-- Google Analytics Start -->
@@ -158,6 +187,8 @@
 
 </script>
 <!-- Google Analytics End -->
+
+
 
 
 

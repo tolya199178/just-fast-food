@@ -299,10 +299,10 @@ if($_SESSION['delivery_type']['type'] != 'delivery') {
 
     ?>
 
-    <div class="todayTime text-right">
+   <!-- <div class="todayTime text-right">
         <?php echo date("D, j F Y, G:i A");?>
 
-    </div>
+    </div>-->
 
     <ul>
 

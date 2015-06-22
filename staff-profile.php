@@ -159,7 +159,6 @@ if ($NEW_ORDER) {
                 </div>
                 <?php
                 $Array = json_decode($new_order['order_details'], true);
-                print_r($Array);
                 ?>
 
                 <div class="b">Payment Type : <?php echo $Array['ORDER_PAYMENT_TYPE'];?></div>

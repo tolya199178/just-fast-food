@@ -3,6 +3,8 @@ session_start();
 $cat = "";
 $error = false;
 include_once('include/functions.php');
+
+
 if(!isset($_GET['category']) || !isset($_GET['catID']) || !isset($_GET['Postcode']) || !isset($_SESSION['DISTENCE'])) {
     header('location:index.php?er=first');
     die();
@@ -33,6 +35,7 @@ if(!isset($_GET['category']) || !isset($_GET['catID']) || !isset($_GET['Postcode
             $type_special_offer = json_decode($r['type_special_offer'] ,true);
             $CATARRAY[] = $CATTEMP;
         }
+
     }
 }
 if(!isset($_SESSION['delivery_type']['type'])) {
@@ -78,7 +81,7 @@ if($_SESSION['delivery_type']['type'] != 'delivery') {
     <title>Menu <?php echo $cat;?> - Just-FastFood</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link href="css/archivist.css?v1.0" rel="stylesheet">
+    <link href="css/archivist.css?v1.4.4" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />

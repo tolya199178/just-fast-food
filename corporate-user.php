@@ -52,33 +52,33 @@ if(isset($_SESSION['access_key']) && isset($_POST['access']) && $_POST['access']
 
                 if ($values == 'user_password') {
 
-                     $value .= "'".md5(mysql_real_escape_string($_POST[$values]))."', ";
+                     $value .= "'".md5(mysqli_real_escape_string($obj->con, $_POST[$values]))."', ";
 
                 } else if ($values == 'user_screen_name') {
 
                      $co_username = explode('@', $_POST['user_email']);
 
-                     $value .= "'".mysql_real_escape_string($co_username['0'])."', ";
+                     $value .= "'".mysqli_real_escape_string($obj->con, $co_username['0'])."', ";
 
                 } else if ($values == 'co_user') {
 
-                     $value .= "'".mysql_real_escape_string('true')."', ";
+                     $value .= "'".mysqli_real_escape_string($obj->con, 'true')."', ";
 
                 } else if ($values == 'user_verified') {
 
-                     $value .= "'".mysql_real_escape_string('true')."', ";
+                     $value .= "'".mysqli_real_escape_string($obj->con, 'true')."', ";
 
                 } else if ($values == 'user_status') {
 
-                  $value .= "'" . mysql_real_escape_string('active') . "', ";
+                  $value .= "'" . mysqli_real_escape_string($obj->con, 'active') . "', ";
 
                 } else if ($value == 'co_company_name') {
 
-                  $value .= "'" . mysql_real_escape_string('active') . "', ";
+                  $value .= "'" . mysqli_real_escape_string($obj->con, 'active') . "', ";
 
                 } else {
 
-                     $value .= "'".mysql_real_escape_string($_POST[$values])."', ";
+                     $value .= "'".mysqli_real_escape_string($obj->con, $_POST[$values])."', ";
 
                 }
 
@@ -586,9 +586,7 @@ function randomPassword($length = 7) {
 
             </div>
 
-        </div>
 
-    </div>
 
 <!-- modal -->
 
@@ -670,7 +668,7 @@ $(document).ready( function(){
 
                         $(location).attr('href', '/')
 
-                    }, 6000);
+                    }, 5000);
 
 
 
@@ -708,7 +706,7 @@ $(document).ready( function(){
 
                     $('#corporate-user-modal .modal-title').text('Something Went Wrong');
 
-                    $('#corporate-user-modal .modal-body').text( 'Something weong wrong, please try again' );
+                    $('#corporate-user-modal .modal-body').text( 'Something went wrong, please try again' );
 
                     $('#corporate-user-modal').modal();
 

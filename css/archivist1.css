@@ -1,0 +1,24 @@
+.resturant {
+	
+	
+	overflow:hidden;
+	margin-bottom:20px;
+	
+}
+.res { border:1px solid #d6d6d6; margin-bottom:30px; }
+
+.res:hover {  background-color:#f3f3f3; text-decoration:none !important;}
+.res ul { margin:0px; padding:0px;}
+.res ul li { list-style:none; border-bottom:1px solid #d6d6d6; }
+.res ul li.post_image { padding:0px !important;}
+.res ul li.post_image img { height:200px; width:100%; }
+.res ul li.post_title { font-size:18px; display:block; padding:7px;}
+.res ul li.post_title span { display:block; font-size:13px; color:#999;}
+.res ul li.post_time i { color:#f64834;}
+.res ul li.post_time { color:#515151; padding:7px; background-color:#f0f0f0;}
+.res ul li.post_others i {   color:#f64834;}
+.res ul li.post_others { color:#515151; padding:7px; }
+.res ul li.post_others span { margin-left:10px;}
+.res ul li.ratings { padding:7px; }
+
+a:hover { text-decoration:none !important;}

@@ -7,7 +7,6 @@
  * Time: 20:15
  * To change this template use File | Settings | File Templates.
  */
-
 if(isset($_GET['verify_email'])) {
 
     $_CODE = $_GET['verify_email'];
@@ -22,7 +21,7 @@ if(strlen($_CODE) > 30) {
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title">Account Verification</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="font-weight: 300">
     <?php
 
     $QQ = $obj->query_db('SELECT `verify_email_email` FROM `verify_email` WHERE `verify_email_code` = "'. $_CODE .'"');
@@ -36,27 +35,26 @@ if(strlen($_CODE) > 30) {
         $obj->query_db("DELETE FROM `verify_email` WHERE `verify_email_code` = '".$_CODE."' ");
 
         ?>
-
-        <p>Welcome <?php $_SESSION['user']?> ! Your Account is NOW activated. Please enter your Postcode to proceed with your order!</p>
+        <p>Thanks <?php echo substr($_SESSION["PAY_POST_VALUE"]["user_name"], 0, strpos($_SESSION["PAY_POST_VALUE"]["user_name"], ' '));?>! Your Account verification is now complete. Please proceed to complete your order!</p>
         
-    <?php
+                    <?php
 
-    } else {
+                    } else {
 
-       ?>
+                       ?>
 
-        <p>Invalid Email Verification Code!</p>
+                        <p>Invalid Email Verification Code!</p>
 
-    <?php
+                    <?php
 
-    }
+                    }
 
-    ?>
+                    ?>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Close</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn-lg btn-primary" data-dismiss="modal">Close</button>-->
+                </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
@@ -68,7 +66,7 @@ if(strlen($_CODE) > 30) {
             }, 500);
             
             setTimeout(function(){
-                $(location).attr('href', '/');
+                $(location).attr('href', 'order-details.php');
             }, 5000);
         });
     </script>

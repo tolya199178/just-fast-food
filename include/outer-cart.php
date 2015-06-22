@@ -22,15 +22,16 @@
 					$save = "";
 					echo '<span class="fl-right b">Total :  &nbsp;&nbsp;&pound; '.number_format($_SESSION['CART']['TOTAL'],2).'</span><div class="clr"></div>';
 					$chareged = 0.0;
-					if(isset($_SESSION['DELIVERY_CHARGES'])) {
-						if($_SESSION['DELIVERY_CHARGES'] == '0' && $_SESSION['delivery_type']['type'] == 'delivery') {
+                    echo 'A'. $_SESSION['DELIVERY_COST'];
+					if(isset($_SESSION['DELIVERY_COST'])) {
+						if($_SESSION['DELIVERY_COST'] == '0' && $_SESSION['delivery_type']['type'] == 'delivery') {
 							$charges = "Free Shipping";
 							$_SESSION['CART_SUBTOTAL'] = $_SESSION['CART']['TOTAL'];
 						} else {
 							//$chareged = round($_SESSION['DELIVERY_CHARGES'] * delivery_charges($_SESSION['DELIVERY_REST_ID']),2);
-							$charges = ' &pound; '.number_format($_SESSION['DELIVERY_CHARGES'], 2);
+							$charges = ' &pound; '.number_format($_SESSION['DELIVERY_COST'], 2);
 
-							$_SESSION['CART_SUBTOTAL'] = $_SESSION['DELIVERY_CHARGES']+$_SESSION['CART']['TOTAL'];
+							$_SESSION['CART_SUBTOTAL'] = $_SESSION['DELIVERY_COST']+$_SESSION['CART']['TOTAL'];
 							if(isset($_SESSION['SPECIAL_OFFER'])){
 								if($_SESSION['CART_SUBTOTAL'] >= $_SESSION['SPECIAL_OFFER']['pound']){
 									$CART_SUBTOTAL = round(($_SESSION['CART_SUBTOTAL'] * $_SESSION['SPECIAL_OFFER']['off']) / 100, 2);

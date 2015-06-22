@@ -2,22 +2,54 @@
 session_start();
 //ob_start("ob_gzhandler");
 
+require_once('include/braintree-php/lib/Braintree.php');
 
-//if(isset($_POST['stripeToken'])) {
-  $_SESSION['CARD_PROCESSING'] = $_POST;
-   print_r($_POST);
-  if(!empty($_POST['N_Addr'])) {
-    //$_SESSION['CARD_PROCESSING']['address'] = $_POST['N_Addr'];
-    $_SESSION['CARD_PROCESSING']['postcode'] = $_POST['N_Postcode'];
-  //}
-  header('Location:include/card/charge.php');
-  die();
+// Production
+Braintree_Configuration::environment('production');
+Braintree_Configuration::merchantId('rdvwm7pdng9sh85c');
+Braintree_Configuration::publicKey('99bynrv9nq6vscm9');
+Braintree_Configuration::privateKey('e30c825740e7b00bc623e160a6ec559f');
+
+
+/* Sandbox
+Braintree_Configuration::environment('sandbox');
+Braintree_Configuration::merchantId('k54nrwhr42sqwfz4');
+Braintree_Configuration::publicKey('86pmzd5bzdysnn5q');
+Braintree_Configuration::privateKey('341f05ee992ec4bec234c6c52453c783');
+*/
+
+/*echo '<pre>';
+var_dump($_SESSION['CART']);
+echo '</pre>';*/
+
+$clientToken = Braintree_ClientToken::generate();
+
+
+if(isset($_POST['bycard'])) {
+    if(isset($_POST['payment_method_nonce'])) {
+
+        $_SESSION['CARD_PROCESSING'] = $_POST;
+        if(isset($_POST['full_name'])) {
+            $_SESSION['CARD_PROCESSING']['card_name'] = $_POST['full_name'];
+        }
+        if(!empty($_POST['N_Postcode'])) {
+            //$_SESSION['CARD_PROCESSING']['address'] = $_POST['N_Addr'];
+            $_SESSION['CARD_PROCESSING']['postcode'] = $_POST['N_Postcode'];
+
+        }
+        header('Location:include/card/charge.php');
+        die();
+
+
+    }
 }
+
 include('include/functions.php');
 
 $s = false;
 $SET = array($_SESSION['access_key'] , $_SESSION['CART'] , $_SESSION['CURRENT_POSTCODE'], $_SESSION['type_min_order'], $_SESSION['CURRENT_MENU']);
 $ERROR = false;
+
 foreach($SET as $val) {
 
   if(!isset($val)) {
@@ -65,11 +97,11 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
 
       if($values == "user_password") {
 
-        $value .= "'".md5(mysql_real_escape_string($_POST[$values]))."', ";
+        $value .= "'".md5(mysqli_real_escape_string($obj->con, $_POST[$values]))."', ";
 
       } else {
 
-        $value .= "'".mysql_real_escape_string($_POST[$values])."', ";
+        $value .= "'".mysqli_real_escape_string($obj->con, $_POST[$values])."', ";
 
       }
 
@@ -114,13 +146,10 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
 
 
 
-
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-
-
   <meta charset="UTF-8">
   <title>Order Payment - Just-FastFood</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png" />
@@ -141,11 +170,10 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
   <script type="text/javascript" src="js/validate.js"></script>
   <script type="text/javascript" src="css/fancybox/jquery.fancybox.js"></script>
   <script type="text/javascript" src="js/mobileMenu.js"></script>
-  <!--<script type="text/javascript" src="https://js.stripe.com/v2/"></script>-->
+  <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
 
-  <script type="text/javascript" src="js/braintree.js"></script>
 
-  <script>
+    <script>
     $(document).ready(function(){
       var Addr = '<?php echo $_SESSION['PAY_POST_VALUE']['user_address'] ?>';
 
@@ -159,7 +187,6 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
           invalid: 'glyphicon glyphicon-remove',
           validating: 'glyphicon glyphicon-refresh'
         },
-
 
         fields: {
 
@@ -226,7 +253,7 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
             $('#submitBtn-card').val('Sending...Please Do NOT Refresh...');
 
             var ccNum = $('#card_no').val(), cvcNum = $('#csc').val(), expMonth = $('#MM').val(), expYear = $('#YYYY').val(), Name = $('#full_name').val();
-
+            var postCode = $('#N_Postcode').val();
             if($('#N_Addr').val() != ''){
 
               Addr = $('#N_Addr').val();
@@ -235,15 +262,19 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
             if($('#N_Postcode').val() != ''){
               Zip = $('#N_Postcode').val();
             }
-
-            alert('just submitted '+ ccNum);
-            // Setup braintree token
-
-
-            var braintree = Braintree.create('MIIBCgKCAQEA1QYEnnts3jaljycYt0HjkLP7/FsVzIjofMYtolq2TtNfsCbXB/Mx3faLitmCMY/MscZwscZiw5Lsj1YCDMDmGYqMkjPpu/jkxxTAfY3oErpobuGlwxA7LK7+Gh9lMdcAEdkwW3pVp8bNnM17dvFemB1aKpIJCzt7MGBFh5WX3rdw9xb8gT/RkTsboxaoS5iDmKXBJvV+liZFiym3hHpfChLcr5xxHXB9StExUh5eG+2J0CEUXvLElCAR0Y+vdgkMyodub3OvV+zj4l+4wqeINBcDiwlWea2vBQtv+cya+SECw8eeN6dROXpu5oQIClwnXU/rd+JYJvp9bGCwhO6/kwIDAQAB');
-            braintree.onSubmitEncryptForm('#submitBtn-card');
-            //return false;
+            var client = new braintree.api.Client({clientToken: "<?php print $clientToken;?>"});
+            client.tokenizeCard({
+                number: ccNum,
+                cardholderName: Name,
+                expirationMonth: expMonth,
+                expirationYear: expYear,
+                cvv:            cvcNum,
+                billingAddress: {
+                    postalCode: postCode
+                }
+            });
           }
+
 
 
 
@@ -252,22 +283,13 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
     });
 
 
-    function stripeResponseHandler(status, response) {
-        // Check for an error:
-        if (response.error) {
-            alert(response.error.message);
-        } else { // No errors, submit the form:
-            var f = $("#pay-by-cradit-card");
-            // Token contains id, last4, and card type:
-            var token = response['id'];
-            // Insert the token into the form so it gets submitted to the server
-            f.append("<input type='hidden' name='stripeToken' value='" + token + "' />");
-            // Submit the form:
-            f.get(0).submit();
-        }
-    }
+    $(function(){
 
+        braintree.setup("<?php print $clientToken; ?>", "custom", {
+            id: "pay-by-cradit-card"});
+    });
   </script>
+
 
 </head>
 <body>
@@ -351,7 +373,7 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
     <h3 style="font-weight: 300">Delivery Address</h3>
     <div class="txt-right u last-a"><a href="order-details.php">Edit</a></div>
     <p class="last-a"><?php echo $_SESSION['PAY_POST_VALUE']['user_address'].' , '.$_POST['user_city']?></p>
-    <p class="last-a"><?php echo $_SESSION['CURRENT_POSTCODE']?></p>
+    <p class="last-a"><?php echo $_SESSION['CURRENT_POSTCODE'];?></p>
     <p class="last-a">Phone No: <?php echo $_SESSION['PAY_POST_VALUE']['user_phoneno']?></p>
     <div>
       <span class="last-a">Order/Delivery Note:</span><br/>
@@ -440,16 +462,23 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
  <div class="col-xs-12 col-sm-8 col-lg-12">
    <nav>
      <ul class="payment-tabs-selectors">
-       <li><a data-content="paypal" class="tab-1st selected" style="font-weight: 300"><i class="fa fa-paypal"></i> PayPal</a></li>
-       <li><a data-content="credit-card"  class="tab-2nd selected" style="font-weight: 300"><i class="fa fa-cc-visa"></i> Card</a></li>
-       <li><a data-content="cash-on-delivery" class="tab-3rd" style="font-weight: 300"><i class="fa fa-money"></i> Cash</a></li>
+         <li><a data-content="credit-card"  class="tab-1st selected" style="font-weight: 300"><i class="fa fa-cc-visa"></i> Card</a></li>
+         <li><a data-content="paypal" class="tab-2nd" style="font-weight: 300"><i class="fa fa-paypal"></i> PayPal</a></li>
+        <?php
+          if(date("H") < 18) {
+              ?>
+              <li><a data-content="cash-on-delivery" class="tab-3rd" style="font-weight: 300"><i class="fa fa-money"></i> Cash</a></li>
+
+          <?php
+          }
+        ?>
      </ul>
    </nav>
  </div>
   <?php include('include/notification.php');?>
   <section class="payments-tabs-content">
-    <section data-content="paypal" class="wrapper-pay-sel col-md-6 selected">
-      <div class="by-card b bypaypal">
+    <section data-content="paypal" class="wrapper-pay-sel col-md-6">
+      <div class="b bypaypal">
         <form action="include/paypal/process.php" method="post">
           <input type='image' name='submit' src='https://www.paypalobjects.com/webstatic/mktg/Logo/AM_SbyPP_mc_vs_ms_ae_UK.png' border='0' align='top' width="200" height="75" alt='Check out with PayPal'/><br/>
           <input type='submit' name='submit' class="btn" id="pay-with-paypal" value="Place my Order"/>
@@ -463,12 +492,20 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
         <!--<span>* Processing Fee  : <b>&pound; <?php echo process_fee()?></b></span><br>-->
       </div>
     </section>
-    <section data-content="credit-card" class="wrapper-pay-sel col-md-10 col-xs-10">
+    <section data-content="credit-card" class="wrapper-pay-sel col-md-10 col-xs-10 selected">
         <form action="" class="pay-by-cradit-card form-horizontal" method="post" id="pay-by-cradit-card">
-          <div class="row">
-            <div class="form-group has-feedback">
+            <div class="row">
+                <?php
+                if(!empty($_SESSION['CARD_ERROR'])) {
+                    ?>
+                    <div class="alert alert-danger alert-dismissable" style="padding: 10px; margin-left: 20px; font-weight: 300"><?php echo ' '. $_SESSION['CARD_ERROR'];?></div>
+
+                <?php
+                }
+                ?>
+                <div class="form-group has-feedback">
               <label for="" class="col-lg-3 control-label" >Card Type:</label>
-              <div class="col-lg-7">
+              <div class="col-lg-7 col-sm-10 col-xs-7">
                 <select name="" id="" class="select form-control">
                   <option value="">Visa </option>
                   <option value="">Mastercard </option>
@@ -483,14 +520,14 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
           </div>
           <div class="form-group has-feedback">
             <label class="col-lg-3 control-label" for="card_no">Card Number:<span class="required">*</span></label>
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-sm-10 col-xs-7">
               <input data-braintree-name="number" type="text" name="card_no" id="card_no" class="input required creditcard form-control" autocomplete="off" maxlength="20"/>
             </div>
           </div>
           <div class="form-group has-feedback">
             <label class="col-lg-3 control-label">Expiry Date:<span class="required">*</span></label>
-            <div class="col-lg-7">
-            <select data-braintree-name="expiration_month" name="MM" id="MM" class="col-lg-5 select required form-control" style="margin-right:10px">
+            <div class="col-lg-7 col-xs-7 col-sm-9">
+            <select data-braintree-name="expiration_month" name="MM" id="MM" class="col-lg-5 select required form-control" style="margin-right: 10px">
                 <option value="">MM</option>
                 <?php
                 $month = array('01'=>'Jan', '02'=>'Feb' , '03'=>'Mar' ,'04'=>'Apr' ,'05'=>'May' , '06'=>'Jun' , '07'=>'Jul' , '08'=>'Aug' , '09'=>'Sep' , '10'=>'Oct' , '11'=>'Nov' ,'12'=>'Dec');
@@ -501,7 +538,7 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
               </select>
 
           <div class="form-group has-feedback col-lg-7">
-            <select data-braintree-name="expiration_year" name="YYYY" id="YYYY" class="select required form-control">
+            <select data-braintree-name="expiration_year" name="YYYY" id="YYYY" class="col-lg-5 col-xs-6 col-sm-9 select required form-control">
               <option value="">YYYY</option>
               <?php
               $now = date('Y');
@@ -516,8 +553,8 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
          </div>
           <div class="form-group has-feedback">
             <label for="" class="col-lg-3 control-label">CVV:</label>
-            <div class="col-lg-3">
-              <input type="text" name="csc" id="csc" class="input required number form-control" autocomplete="off" maxlength="4"/>
+            <div class="col-lg-3 col-sm-10 col-xs-7">
+              <input data-braintree-name="cvv" type="text" name="csc" id="csc" class="input required number form-control" autocomplete="off" maxlength="4"/>
 
             </div>
             <img src="images/card-last3digits.png" alt="" />
@@ -526,22 +563,20 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
           <div class="form-group has-feedback">
             <label for="" class="col-lg-3 control-label">Name on Card:</label>
             <div class="col-xs-7">
-              <input type="text" name="full_name" id="full_name" class="input full_name required form-control" value="<?php echo $_SESSION['PAY_POST_VALUE']['user_name']?>"/>
+              <input type="text" name="full_name" id="full_name" class="input full_name required form-control" value="<?php echo $_SESSION['PAY_POST_VALUE']['user_name'];?>" />
             </div>
           </div>
-          <div class="form-group has-feedback">
+          <!--<div class="form-group has-feedback">
             <input type="checkbox" name="same_adrress" checked="true" id="same_adrress"/><label for="" style="display:inline-block; width:auto;">Billing address the same as delivery address:</label>
           </div>
           <div class="form-group has-feedback">
-            <label for="" class="col-lg-3 control-label">Address:</label>
-           <div class="col-lg-7">
-            <input type="text" name="N_Addr" id="N_Addr" class="input required form-control"/>
-           </div>
-          </div>
+            <label for="" >Address:</label>
+            <input type="text" name="N_Addr" id="N_Addr" class="input required"/>
+          </div>-->
           <div class="form-group has-feedback">
             <label for="" class="col-lg-3 control-label" >Postcode:</label>
-            <div class="col-lg-5">
-              <input type="text" name="N_Postcode" id="N_Postcode" class="input required form-control" />
+            <div class="col-lg-5 col-sm-10 col-xs-7">
+              <input type="text" name="N_Postcode" id="N_Postcode" class="input required form-control" value="<?php echo $_SESSION['CURRENT_POSTCODE']; ?>" />
             </div>
           </div>
           <div class="form-group">
@@ -551,7 +586,8 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
             <input type="hidden" name="postcode" value="<?php echo $_SESSION['CURRENT_POSTCODE']?>"/>
             <input type="hidden" name="access" value="<?php echo $_SESSION['access_key'];?>"/>
           </div>
-         <span class="small"><?php echo $_SESSION['error'];?></span>
+
+
         </form>
       </section>
     <section data-content="cash-on-delivery" class="wrapper-pay-sel col-md-6">
@@ -591,7 +627,7 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
 <?php include_once('include/notification.php');?>
 
 <script type="text/javascript">
-  $(document).ready(function() {
+  $(document).ready(function(){
 
     $('#pay-with-cash').on('click', function(){
      // e.preventDefault();
@@ -601,7 +637,9 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
     });
   });
 </script>
+
 <script>
+
   jQuery(document).ready(function($){
     var tabItems = $('.payment-tabs-selectors a'),
       tabContentWrapper = $('.payments-tabs-content');
@@ -612,14 +650,14 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
       if( !selectedItem.hasClass('selected') ) {
         var selectedTab = selectedItem.data('content'),
           selectedContent = tabContentWrapper.find('section[data-content="'+selectedTab+'"]'),
-          slectedContentHeight = selectedContent.innerHeight();
+          selectedContentHeight = selectedContent.innerHeight();
 
         tabItems.removeClass('selected');
         selectedItem.addClass('selected');
         selectedContent.addClass('selected').siblings('section').removeClass('selected');
         //animate tabContentWrapper height when content changes
         tabContentWrapper.animate({
-          'height': slectedContentHeight
+          'height': selectedContentHeight
         }, 200);
       }
     });
@@ -644,6 +682,9 @@ if(!isset($_SESSION['user']) && (!isset($_SESSION['userId']))) {
       }
     }
   });
+  setTimeout(function(){
+      $(".alert-danger").fadeOut(6000);
+  }, 1500 );
 </script>
 </body>
 </html>

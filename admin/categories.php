@@ -28,7 +28,7 @@
 		if(isset($_POST['update'])) {
 			$val = "";
 			foreach($ARRAY as $values) {
-				$val .= "`".$values."` = '".mysql_real_escape_string(stripslashes($_POST[$values]))."',";
+				$val .= "`".$values."` = '".mysqli_real_escape_string($obj->con, stripslashes($_POST[$values]))."',";
 			}
 			$val = substr($val ,0 ,-1);
 			$query = "UPDATE  `categories` SET ".$val."  WHERE `category_id` = '".$_POST['category_id']."'";
@@ -39,7 +39,7 @@
 		} else {
 			$value = "NULL, ";
 			foreach($ARRAY as $values) {
-				$value .= "'".mysql_real_escape_string(stripslashes($_POST[$values]))."',";
+				$value .= "'".mysqli_real_escape_string($obj->con, stripslashes($_POST[$values]))."',";
 			}
 			$value = substr($value, 0, -1);
 			$result = INSERT($value ,'categories' ,false ,'');

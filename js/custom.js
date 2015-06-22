@@ -127,11 +127,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('.resturant').each(function () {
-        $(this).toggleClass('shadow');
-    });
-});
 
 $(document).ready(function(){
 
@@ -705,7 +700,7 @@ $(document).ready(function() {
 
     // Restaurant signup form validation
 
-    $("#res-signup-form").bootstrapValidator({
+    $("#restaurant-signup-form").bootstrapValidator({
 
 
         message: 'This value is not valid',
@@ -721,48 +716,44 @@ $(document).ready(function() {
         },
 
         submitHandler: function (validator, form, submitButton) {
+            var request;
+            var serializedData = form.serialize();
+            request = $.ajax({
+               url: form.attr('action'),
+                type: 'POST',
+                data: serializedData
+            });
 
-            $.post(form.attr('action'), form.serialize(), function (result) {
+            request.done(function (response) {
+                if(response.status === 'dispatched') {
+                    console.log('im here 1' + response.message);
+                    $('#restaurant-signup-modal .modal-title').text('Email Sent');
+                    $('#restaurant-signup-modal .modal-body').text(response.message);
+                    $('#restaurant-signup-modal .btn').hide();
+                    $('#restaurant-signup-modal').modal();
 
-                // The result is a JSON formatted by your back-end
-
-                // I assume the format is as following:
-
-                //  {
-
-                //      valid: true,          // false if the account is not found
-
-                //      username: 'Username', // null if the account is not found
-
-                //  }
-
-                if (result.valid == true || result.valid == 'true') {
-
-                    // You can reload the current location
-
-                    window.location.reload();
-
-
-                    // Or use Javascript to update your page, such as showing the account name
-
-                    // $('#welcome').html('Hello ' + result.username);
-
+                    setTimeout(function () {
+                        $(location).attr('href', '/');
+                    }, 5000);
+                } else if (response.status === 'account_exist') {
+                    console.log('im here 2' + response.message);
+                    $('#restaurant-signup-modal .modal-title').text('Thanks!');
+                    $('#restaurant-signup-modal .modal-body').text(response.message);
+                    $('#restaurant-signup-modal').modal();
+                    $('#restaurant-signup-form').bootstrapValidator('disableSubmitButtons', false);
                 } else {
-
-                    // The account is not found
-
-                    // Show the errors
-
-                    $('#errors').html('The account is not found').removeClass('hide');
-
-
-                    // Enable the submit buttons
-
-                    $('#loginForm').bootstrapValidator('disableSubmitButtons', false);
+                    $('#restaurant-signup-modal .modal-title').text('OOPS!');
+                    $('#restaurant-signup-modal .modal-body').text('Looks like something went wrong, please give it another try or email us for assistance');
+                    $('#restaurant-signup-modal .modal-body').css("font-weight", 300);
+                    $('#restaurant-signup-modal').modal();
+                    $('#restaurant-signup-form').bootstrapValidator('disableSubmitButtons', false);
 
                 }
+            });
 
-            }, 'json');
+            request.fail(function (response) {
+                console.log(response);
+            })
 
         },
 
@@ -782,22 +773,8 @@ $(document).ready(function() {
 
             },
 
-            lastName: {
 
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'The last name is required'
-
-                    }
-
-                }
-
-            },
-
-
-            user_email0: {
+            j_email: {
 
                 validators: {
 
@@ -817,27 +794,7 @@ $(document).ready(function() {
 
             },
 
-            email: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'The email is required and cannot be empty'
-
-                    },
-
-                    emailAddress: {
-
-                        message: 'The input is not a valid email address'
-
-                    }
-
-                }
-
-            },
-
-            phoneno: {
+            j_phoneno: {
                 message: 'This field cannot be empty.',
 
                 validators: {
@@ -849,100 +806,13 @@ $(document).ready(function() {
                 }
             },
 
-            postcode: {
+            j_postcode: {
                 validators: {
                     notEmpty: {
                         message: 'Post code is required and cannot be empty'
                     }
                 }
             },
-
-            password: {
-
-                message: 'The password is not valid',
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'The password is required and cannot be empty'
-
-                    },
-
-                    stringLength: {
-
-                        min: 6,
-
-                        max: 30,
-
-                        message: 'The password must be more than 6 and less than 30 characters long'
-
-                    },
-
-                    regexp: {
-
-                        regexp: /^[a-zA-Z0-9_]+$/,
-
-                        message: 'The password can only consist of alphabetical, number and underscore'
-
-                    }
-
-                }
-
-            },
-
-            user_password1: {
-
-                message: 'The password is not valid',
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'The password is required and cannot be empty'
-
-                    },
-
-                    stringLength: {
-
-                        min: 6,
-
-                        max: 30,
-
-                        message: 'The password must be more than 6 and less than 30 characters long'
-
-                    },
-
-                    regexp: {
-
-                        regexp: /^[a-zA-Z0-9_]+$/,
-
-                        message: 'The password can only consist of alphabetical, number and underscore'
-
-                    }
-
-                }
-
-            },
-
-            confirmPassword: {
-
-                message: 'The confirm password is required and cannot be empty',
-
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'The password is required and cannot be empty'
-
-                    }
-
-                }
-
-
-            },
-
 
 
             managerName: {
@@ -960,7 +830,7 @@ $(document).ready(function() {
             },
 
 
-            resName: {
+            j_rest_name: {
 
                 validators: {
 
@@ -975,13 +845,41 @@ $(document).ready(function() {
             },
 
 
-            city: {
+            j_city: {
 
                 validators: {
 
                     notEmpty: {
 
                         message: "City is required"
+
+                    }
+
+                }
+
+            },
+
+            j_rest_delivery: {
+                message: 'This is a required field',
+                validators: {
+
+                    notEmpty: {
+
+                        message: "Please let us know if you have in-house delivery staffs"
+
+                    }
+
+                }
+
+            },
+
+            j_rest_type: {
+                message: 'This is a required field',
+                validators: {
+
+                    notEmpty: {
+
+                        message: "Please select your type of Cuisine"
 
                     }
 
